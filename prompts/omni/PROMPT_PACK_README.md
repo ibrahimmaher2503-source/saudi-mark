@@ -1,66 +1,95 @@
-# Saudi Mark — Omni Gemini Prompt Pack
+# Saudi Mark — Omni Gemini Video Generation Pack
 
-This pack creates the 19–20 second Saudi Mark mobile car-wash motion-graphics ad as separate clips. Generate each clip separately, then assemble in CapCut.
+هذا هو Prompt Pack الخاص **بتوليد فيديو فعلي** في Omni Gemini. كل ملف يطلب فيديو مستقلًا بمدة محددة وحركة واضحة، وليس صورة Storyboard.
 
-## Sequence
+## ترتيب التوليد
 
-| File | Duration | Purpose |
+| الملف | مدة الفيديو | الناتج |
 |---|---:|---|
-| `01-hook-busy-day.md` | 3s | Busy schedule hook |
-| `02-car-needs-care.md` | 3s | Car needs attention |
-| `03-do-not-go-to-car-wash.md` | 3s | Avoid the distant wash trip |
-| `04-saudi-mark-comes-to-you.md` | 4s | Map route to Jeddah/customer |
-| `05-easy-booking-premium-care.md` | 4s | Booking and service promise |
-| `06-premium-final-card.md` | 3s | Brand end card |
+| `01-generate-video-hook.md` | 3 ثوانٍ | Hook وكثرة المشاوير |
+| `02-generate-video-care.md` | 3 ثوانٍ | السيارة تحتاج عناية |
+| `03-generate-video-no-trip.md` | 3 ثوانٍ | لا تروح للمغسلة |
+| `04-generate-map-route.md` | 4 ثوانٍ | الخريطة والمسار إلى جدة |
+| `05-generate-video-booking.md` | 4 ثوانٍ | الحجز والعناية |
+| `06-generate-video-final-card.md` | 3 ثوانٍ | النهاية الفاخرة |
 
-Total target duration: 20 seconds.
+الإجمالي: **20 ثانية**.
 
-## Arabic text to add in CapCut
+## طريقة الاستخدام في Omni Gemini
+
+1. افتح ملف Prompt واحدًا فقط في كل مرة.
+2. ارفع PNG الخاص بالمشهد كـreference image إذا كان Omni يسمح بالـimage reference.
+3. استخدم prompt الفيديو كاملًا كما هو.
+4. اختر `vertical 9:16`.
+5. ولّد الفيديو، وليس image أو storyboard.
+6. افحص أن الناتج فيه حركة فعلية خلال المدة كلها.
+7. كرر المشهد إذا غيّر شكل السيارة أو أضاف نصًا مشوهًا.
+8. احفظ كل Clip باسم رقمي مطابق للترتيب.
+
+## ملفات PNG المرجعية
+
+كل العناصر الآن PNG بخلفية شفافة داخل:
 
 ```text
-0.0–3.0  كثيرة مشاويرك؟
-3.0–6.0  وسيارتك دايمًا تحتاج عناية؟
-6.0–9.0  لا تروح للمغسلة
-9.0–13.0 Saudi Mark تجيك لموقعك
-13.0–17.0 احجز من جوالك\nوخلي العناية علينا
-17.0–20.0 غسيل سيارات متنقل في جدة\nاحجز الآن
+assets/png/
 ```
 
-Do not ask Omni Gemini to render these words. Add them in CapCut with the official brand logo.
+العناصر:
 
-## Supplied assets
+```text
+car.png
+clock.png
+calendar-event.png
+droplet.png
+bubble.png
+sparkles.png
+device-mobile.png
+map-pin.png
+map-route.png
+map.png
+route.png
+building-skyscraper.png
+saudi-arabia-location-map.png
+```
 
-Use assets from `../../assets/icons/` as references or overlays:
+## النصوص التي تضاف في CapCut فقط
 
-- `car.svg`
-- `map-pin.svg`
-- `map.svg`
-- `map-route.svg`
-- `device-mobile.svg`
-- `calendar-event.svg`
-- `clock.svg`
-- `droplet.svg`
-- `sparkles.svg`
-- `route.svg`
-- `building-skyscraper.svg`
-- `bubble.svg`
-- `saudi-arabia-location-map.svg`
+```text
+0–3   كثيرة مشاويرك؟
+3–6   وسيارتك دايمًا تحتاج عناية؟
+6–9   لا تروح للمغسلة
+9–13  Saudi Mark تجيك لموقعك
+13–17 احجز من جوالك
+      وخلي العناية علينا
+17–20 غسيل سيارات متنقل في جدة
+      احجز الآن
+```
 
-## Omni generation settings
+لا تطلب من Omni توليد أي نص أو شعار. أضف النص العربي وشعار Saudi Mark في CapCut.
 
-- Vertical 9:16
-- Generate each scene separately
-- Keep the same car silhouette and palette across all clips
-- Use image/reference upload for the matching supplied SVG where Omni supports it
-- If Omni cannot ingest SVG, rasterize the SVG to a transparent PNG before uploading as a reference
-- Generate clean footage without text or logo
+## ثبات الهوية بين المقاطع
+
+استخدم نفس:
+
+- car.png في كل مشهد
+- الألوان: navy, aqua, cyan, silver, restrained gold
+- أسلوب line-art/vector
+- سماكة الخطوط
+- نسبة 9:16
+- عدم وجود أشخاص أو تصوير حقيقي
+
+## Negative Prompt عام
+
+```text
+No still image, no storyboard, no static poster, no readable text, no Arabic letters, no English letters, no generated logo, no fake brand name, no watermark, no prices, no phone numbers, no invented offers, no unapproved coverage claims, no realistic people, no photography, no extra wheels, no changing car design, no object morphing, no flicker, no glitch, no chaotic camera, no random letters, no distorted UI, no unreadable map labels.
+```
 
 ## CapCut assembly
 
-1. Place clips in numeric order.
-2. Use hard cuts or short 4–6 frame transitions only.
-3. Add the Arabic text manually with safe margins.
-4. Add the official Saudi Mark logo only in the final card.
-5. Add whoosh, clock tick, map ping, booking click, water ripple, and final sparkle sounds.
-6. Export 1080×1920, 30 fps, H.264, high quality.
-7. Check Arabic readability, logo proportions, and safe margins before publishing.
+1. ضع Clips بالترتيب من 01 إلى 06.
+2. استخدم cuts قصيرة أو انتقالات 4–6 frames.
+3. أضف النصوص العربية يدويًا.
+4. أضف شعار Saudi Mark الرسمي في النهاية.
+5. أضف صوت clock tick، whoosh، map ping، booking click، water ripple، sparkle.
+6. صدّر 1080×1920، 30 fps، H.264.
+7. راجع النص العربي واللوجو والـsafe margins قبل النشر.

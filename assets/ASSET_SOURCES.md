@@ -1,23 +1,26 @@
 # Saudi Mark — Motion Graphics Asset Sources
 
-Downloaded 2026-08-10 for the Saudi Mark social-media video project.
+Downloaded and rasterized 2026-08-10 for the Saudi Mark social-media video project.
 
-## Tabler Icons
+## PNG delivery assets
 
-The following SVG elements are from Tabler Icons:
+The delivery assets are transparent PNG files in `assets/png/`:
 
-- `car.svg`
-- `map-pin.svg`
-- `map.svg`
-- `map-route.svg`
-- `device-mobile.svg`
-- `calendar-event.svg`
-- `clock.svg`
-- `droplet.svg`
-- `sparkles.svg`
-- `route.svg`
-- `building-skyscraper.svg`
-- `bubble.svg`
+- `bubble.png`
+- `building-skyscraper.png`
+- `calendar-event.png`
+- `car.png`
+- `clock.png`
+- `device-mobile.png`
+- `droplet.png`
+- `map-pin.png`
+- `map-route.png`
+- `map.png`
+- `route.png`
+- `saudi-arabia-location-map.png`
+- `sparkles.png`
+
+The utility icons were sourced from Tabler Icons and rasterized locally to transparent PNG for Omni Gemini and CapCut workflows.
 
 Source: https://github.com/tabler/tabler-icons
 License: MIT
@@ -27,13 +30,15 @@ These are generic utility icons, not Saudi Mark branding. Apply Saudi Mark color
 
 ## Saudi Arabia map
 
-- `saudi-arabia-location-map.svg`
+- `saudi-arabia-location-map.png`
 
 Source: https://commons.wikimedia.org/wiki/File:Saudi_Arabia_location_map.svg
-Direct file: https://upload.wikimedia.org/wikipedia/commons/6/67/Saudi_Arabia_location_map.svg
+Original direct file: https://upload.wikimedia.org/wikipedia/commons/6/67/Saudi_Arabia_location_map.svg
 Author: NordNordWest
 License: CC BY-SA 3.0
 License text: https://creativecommons.org/licenses/by-sa/3.0/
+
+The map was rasterized locally to a transparent PNG at 1600×1333 pixels.
 
 ## Usage notes
 
