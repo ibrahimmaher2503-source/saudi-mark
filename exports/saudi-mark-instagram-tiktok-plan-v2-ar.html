@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>Saudi Mark — خطة Instagram وTikTok v2</title>
+<style>
+@page { size:A4; margin:14mm 12mm 16mm; }
+:root { --ink:#152437; --muted:#647487; --line:#d7e1e8; --navy:#092a3b; --teal:#087f8c; --blue:#1261a0; --yellow:#f5b841; --soft:#f3f8fa; --paper:#fff; }
+* { box-sizing:border-box; }
+html,body { margin:0; padding:0; background:#e8eef2; color:var(--ink); font-family:"DejaVu Sans",Arial,sans-serif; direction:rtl; }
+body { font-size:9.4pt; line-height:1.68; }
+.page { max-width:210mm; margin:0 auto; background:var(--paper); }
+.cover { min-height:267mm; page-break-after:always; color:white; padding:27mm 22mm 18mm; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; background:linear-gradient(135deg,#071e2e 0%,#0b4258 53%,#087f8c 100%); }
+.cover:before { content:""; position:absolute; width:200mm; height:200mm; border:1px solid rgba(255,255,255,.13); border-radius:50%; left:-100mm; bottom:-96mm; }
+.cover:after { content:""; position:absolute; width:95mm; height:95mm; border:1px solid rgba(245,184,65,.38); border-radius:50%; right:-55mm; top:-38mm; }
+.cover .mark { position:relative; z-index:1; display:flex; align-items:center; gap:8mm; }
+.cover .mark img { width:28mm; height:28mm; object-fit:cover; border-radius:50%; border:2px solid rgba(255,255,255,.75); }
+.cover .eyebrow { position:relative; z-index:1; color:#ffd166; font-size:9pt; font-weight:bold; letter-spacing:.1em; }
+.cover h1 { position:relative; z-index:1; max-width:160mm; font-size:31pt; line-height:1.34; margin:14mm 0 6mm; }
+.cover .subtitle { position:relative; z-index:1; max-width:142mm; font-size:15pt; line-height:1.65; color:#e2f0f2; }
+.cover .positioning { position:relative; z-index:1; border-right:4px solid var(--yellow); padding:4mm 5mm; margin-top:10mm; max-width:150mm; background:rgba(255,255,255,.08); font-size:12pt; font-weight:bold; }
+.cover .meta { position:relative; z-index:1; border-top:1px solid rgba(255,255,255,.35); padding-top:7mm; display:grid; grid-template-columns:1fr 1fr; gap:5mm; color:#d8e9ed; }
+.cover .meta strong { display:block; color:white; font-size:10pt; }
+.cover .badge { display:inline-block; position:relative; z-index:1; background:var(--yellow); color:#152437; padding:1.8mm 4mm; border-radius:20px; margin-top:7mm; font-weight:bold; }
+.content { padding:0 2mm 10mm; }
+.plan-title { display:none; }
+h2 { margin:11mm 0 4mm; padding:2.7mm 4mm 2.2mm; border-right:4px solid var(--yellow); background:linear-gradient(90deg,#eef7f8,transparent); color:#08495d; font-size:16pt; line-height:1.4; page-break-after:avoid; }
+h3 { margin:6.5mm 0 2mm; color:var(--teal); font-size:12.2pt; page-break-after:avoid; }
+h4 { margin:4mm 0 1.5mm; color:var(--blue); font-size:10.8pt; page-break-after:avoid; }
+p { margin:0 0 2.8mm; }
+a { color:var(--teal); text-decoration:none; font-weight:600; }
+hr { border:0; border-top:1px solid var(--line); margin:6mm 0; }
+blockquote { margin:4mm 0; padding:3.5mm 4.5mm; background:#edf8f8; border-right:4px solid var(--teal); color:#134e61; font-size:11.5pt; font-weight:600; page-break-inside:avoid; }
+.clean-list { margin:1mm 0 3.5mm; padding:0 6mm 0 0; }
+.clean-list li { margin:1mm 0; padding-right:1mm; }
+.numbered { margin:1.3mm 0; }
+.table-wrap { width:100%; overflow:visible; margin:3mm 0 5mm; page-break-inside:auto; }
+table { width:100%; border-collapse:collapse; table-layout:fixed; font-size:7.15pt; line-height:1.4; direction:rtl; }
+th { background:#0b4258; color:white; padding:1.9mm 1.5mm; border:1px solid #083548; font-weight:bold; vertical-align:top; }
+td { padding:1.7mm 1.45mm; border:1px solid var(--line); vertical-align:top; overflow-wrap:anywhere; }
+tr:nth-child(even) td { background:#f5f8fa; }
+thead { display:table-header-group; }
+tr { page-break-inside:avoid; }
+pre { direction:ltr; text-align:left; background:#142534; color:#d9f1f0; padding:3mm; border-radius:2mm; font-size:7.5pt; white-space:pre-wrap; }
+code { font-family:"DejaVu Sans Mono",monospace; font-size:.88em; }
+del { color:#8c3b35; }
+.asset-page { page-break-before:always; padding-top:8mm; }
+.asset-page h2 { margin-top:0; }
+.asset-intro { color:var(--muted); }
+.character-card { display:grid; grid-template-columns:48mm 1fr; gap:7mm; align-items:center; margin:5mm 0 8mm; padding:5mm; background:var(--soft); border:1px solid var(--line); }
+.character-card img { width:48mm; height:45mm; object-fit:cover; border-radius:5mm; }
+.character-card strong { color:#08495d; font-size:12pt; }
+.app-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:5mm; margin-top:5mm; }
+.app-grid figure { margin:0; padding:2.5mm; background:#f7fafb; border:1px solid var(--line); border-radius:3mm; break-inside:avoid; }
+.app-grid img { display:block; width:100%; height:65mm; object-fit:cover; object-position:top; border-radius:2mm; }
+.app-grid figcaption { font-size:7.3pt; color:var(--muted); margin-top:1.5mm; text-align:center; }
+@media print { html,body { background:#fff; } .page { max-width:none; } a { color:inherit; } }
+</style>
+</head>
+<body>
+<div class="page">
+<section class="cover">
+  <div>
+    <div class="mark"><img src="file:///home/ubuntu/projects/saudi-mark/assets/brand/saudi-mark-character-reference.jpg" alt="Saudi Mark brand character"><span class="eyebrow">SAUDI MARK · GROWTH PLAYBOOK</span></div>
+    <h1>خطة Instagram وTikTok</h1>
+    <div class="subtitle">نسخة v2 أكثر دقة، مبنية على مواقف واختبارات حقيقية لمحتوى Saudi Mark في جدة.</div>
+    <div class="positioning">عناية سيارات متنقلة فاخرة في جدة، بموعد واضح ونتيجة يمكن رؤيتها.</div>
+    <div class="badge">نسخة v2 · Instagram + TikTok · 2026</div>
+  </div>
+  <div class="meta">
+    <div><strong>الإيقاع</strong>3 فيديوهات + Reply أسبوعيًا</div>
+    <div><strong>الفترة</strong>8 أسابيع بعد اعتماد التشغيل</div>
+    <div><strong>السوق الأساسي</strong>جدة أولًا</div>
+    <div><strong>نسخة الخطة</strong>v2 · 13 أغسطس 2026</div>
+  </div>
+</section>
+<section class="content">
+<h1 class="plan-title">Saudi Mark — خطة Instagram وTikTok v2</h1>
+<h2>خطة محتوى أكثر دقة، مبنية على مواقف واختبارات حقيقية</h2>
+<p><strong>الفترة المقترحة:</strong> 8 أسابيع تبدأ بعد اعتماد التشغيل  </p>
+<p><strong>السوق:</strong> جدة فقط  </p>
+<p><strong>القنوات:</strong> Instagram وTikTok فقط  </p>
+<p><strong>الإيقاع:</strong> 3 فيديوهات رئيسية + فيديو Reply to Comment أسبوعيًا، وCarousel واحد على Instagram  </p>
+<p><strong>فكرة النسخة:</strong> لا نبيع “غسيلًا فاخرًا” بالكلام؛ نصور قرارات صغيرة تثبت هل الخدمة تستحق أم لا.</p>
+<blockquote>لا تُنشر أي معلومة عن السعر، التغطية، وقت الوصول، التطبيق، العضوية، الهدية، نوع المواد، أو نتيجة غير قابلة للتصوير قبل اعتمادها. عندما تكون المعلومة غير معتمدة، يظهر ذلك داخل بطاقة الإنتاج كـ<code>PENDING</code> ولا يتحول إلى وعد في الإعلان.</blockquote>
+<hr>
+<h2>1. ما الذي سنغيره عن حساب مغسلة عادي؟</h2>
+<p>حسابات كثيرة تقول: سيارة متسخة، ماء، لمعان، “احجز الآن”. هذا لا يعطي العميل سببًا يختار Saudi Mark بدل Sweater أو Purely أو RinseNGo أو العروض السعرية المحلية.</p>
+<p>Saudi Mark ستبني محتواها على أربع سلاسل يمكن للناس تمييزها من أول ثانية:</p>
+<h3>السلسلة A: اختبار النظافة</h3>
+<p>نأخذ سيارة تبدو نظيفة ونكشف جزءًا واحدًا لا يظهر من بعيد. لا نبالغ في النتيجة، ولا نستخدم صورًا من الإنترنت.</p>
+<h3>السلسلة B: الفني يقرر</h3>
+<p>الفني يختار نقطة البداية أو يرفض طريقة معينة ويشرح السبب بجملة واحدة. لا نطلب منه حفظ إعلان.</p>
+<h3>السلسلة C: العميل يسأل</h3>
+<p>كل أسبوع نأخذ سؤالًا حقيقيًا من تعليق أو رسالة ونجيب عنه أمام الكاميرا. السؤال يصبح عنوان الفيديو.</p>
+<h3>السلسلة D: من الشاشة إلى السيارة</h3>
+<p>نستخدم واجهة التطبيق فقط لشرح خطوة معتمدة، ثم ننتقل إلى موقف حقيقي أمام السيارة. إذا لم تكن الخاصية Live، لا نعرضها كطريقة حجز حالية.</p>
+<p>هذه السلاسل أفضل من “أعمدة محتوى” عامة لأنها تعطي الفريق شكلًا ثابتًا، لكن كل حلقة تحتاج مشكلة حقيقية ولقطة حقيقية.</p>
+<hr>
+<h2>2. فرضيات نريد اختبارها خلال الشهرين</h2>
+<p>لا نبدأ بافتراض أن الجمهور يريد الكارتكتر أو البخار أو السعر. نختبر:</p>
+<div class="table-wrap"><table><thead><tr><th>الفرضية</th><th>كيف نختبرها</th><th>علامة أولية على النجاح</th></tr></thead><tbody><tr><td>الناس تتوقف عند مشكلة بصرية أكثر من جملة دعائية</td><td>نفس اللقطات مع Hook بصري مقابل Hook لوجو</td><td>احتفاظ أعلى في أول 3 ثوانٍ</td></tr><tr><td>شرح الفني يبني ثقة أكثر من النص</td><td>فيديو الفني مقابل فيديو نص على الشاشة</td><td>تعليقات أسئلة نوعية وSaves</td></tr><tr><td>المقارنة العادلة تميز البراند</td><td>Before/After بنفس الإضاءة مقابل Montage لمعان</td><td>حفظ ومشاركة أعلى</td></tr><tr><td>الكارتكتر يرفع التذكر إذا ظهر مرة لا دائمًا</td><td>نسخة يبدأ فيها الكارتكتر ونسخة يظهر في النهاية</td><td>زيارات الحساب ومشاهدة النهاية</td></tr><tr><td>سؤال السعر يحتاج شرحًا لا خصمًا</td><td>Reply video صريح مقابل صورة عرض</td><td>رسائل أقل عشوائية وأسئلة أدق</td></tr><tr><td>التطبيق يفهم أكثر عندما يرتبط بموقف</td><td>Screen recording فقط مقابل شاشة ثم سيارة</td><td>نقرات/تعليقات عن خطوة محددة</td></tr></tbody></table></div>
+<h3>لا نغيّر أكثر من عنصر واحد في الاختبار</h3>
+<p>لا نغير Hook والصوت والمدة وCTA في نفس المقارنة. نختار عنصرًا واحدًا، ونترك بقية الفيديو متقاربة.</p>
+<hr>
+<h2>3. من نصور؟ وماذا نفعل إذا لم توجد سيارات عملاء؟</h2>
+<h3>الأولوية</h3>
+<p class="numbered">1. سيارة يملكها صاحب البراند أو أحد أفراد الفريق.</p>
+<p class="numbered">2. سيارة تجريبية بموافقة مكتوبة من مالكها.</p>
+<p class="numbered">3. سيارة عميل مع موافقة منفصلة للتصوير وعدم إظهار اللوحة/الموقع.</p>
+<h3>إذا لم توجد خدمة حقيقية في يوم التصوير</h3>
+<p>لا نصطنع “وصول فني” أو Before/After. ننتج بدلًا منها:</p>
+<ul class="clean-list"><li>فيديو شرح الفني على أدوات حقيقية بدون ادعاء تنفيذ كامل.</li><li>Reply video عن سؤال السعر أو الخدوش أو التغطية.</li><li>اختبار تصوير Before/After على جزء صغير من سيارة الفريق.</li><li>فيديو واجهة التطبيق مع عبارة “مرجع لتجربة الحجز” حتى تعتمد الحالة.</li><li>Motion للكارتكتر يشرح موقفًا، مع عدم إظهار نتيجة خدمة مولدة.</li></ul>
+<h3>ملف موافقة التصوير</h3>
+<p>قبل تصوير سيارة عميل، يسجل الفريق:</p>
+<ul class="clean-list"><li>إذن تصوير السيارة.</li><li>هل الوجه مسموح؟ نعم/لا.</li><li>هل اللوحة تُطمس؟ نعم.</li><li>هل الموقع يُذكر؟ لا، إلا بإذن.</li><li>هل يمكن استخدام اللقطة في إعلان مدفوع؟ نعم/لا.</li></ul>
+<hr>
+<h2>4. بطاقة الإنتاج التي لا يبدأ التصوير بدونها</h2>
+<p>كل فيديو يجب أن يملأ بهذه البيانات:</p>
+<ul class="clean-list"><li><strong>رقم الفكرة:</strong></li><li><strong>السلسلة:</strong> اختبار النظافة / الفني يقرر / العميل يسأل / من الشاشة إلى السيارة.</li><li><strong>المنصة:</strong> Instagram Reel / TikTok / نسختان أصليتان.</li><li><strong>الهدف:</strong> مشاهدة كاملة / حفظ / تعليق / زيارة الحساب / سؤال عن التوفر.</li><li><strong>المشكلة في جملة:</strong></li><li><strong>Hook في أول ثانية:</strong></li><li><strong>المكان:</strong> موقف منزل / مكتب / موقف عام بإذن / استوديو بسيط.</li><li><strong>السيارة:</strong> النوع يذكر فقط إذا وافق المالك.</li><li><strong>اللقطات مع الزمن:</strong></li><li><strong>الكلام الحرفي:</strong></li><li><strong>النص على الشاشة:</strong></li><li><strong>CTA واحد:</strong></li><li><strong>الأصول:</strong> سيارة حقيقية / الفني / كارتكتر / UI معتمد.</li><li><strong>Claim gate:</strong> ما الذي يحتاج اعتمادًا؟</li><li><strong>نسخة TikTok:</strong> ما الذي سيبدأ به الفيديو؟</li><li><strong>نسخة Instagram:</strong> ما الذي سيظهر على Cover؟</li><li><strong>الاختبار:</strong> متغير واحد.</li><li><strong>نتيجة 48 ساعة:</strong> تُملأ بعد النشر.</li></ul>
+<hr>
+<h1 class="plan-title">5. التقويم التنفيذي: 8 أسابيع</h1>
+<p>كل أسبوع له موضوع واحد. ننشر 3 فيديوهات رئيسية، فيديو رد على تعليق، وCarousel Instagram واحد. الـStories تُقطع من نفس يوم التصوير ولا تحتاج جلسة تصميم إضافية.</p>
+<hr>
+<h2>الأسبوع 1 — “هل العربية نظيفة فعلًا؟”</h2>
+<h3>Reel/TikTok 01 — اختبار حافة الباب</h3>
+<ul class="clean-list"><li><strong>السلسلة:</strong> اختبار النظافة.</li><li><strong>الهدف:</strong> حفظ ومشاركة.</li><li><strong>المدة:</strong> 18 ثانية.</li><li><strong>Hook:</strong> “من بعيد العربية شكلها نظيف. قرب هنا.”</li><li><strong>اللقطات:</strong> 0–2 لقطة واسعة ثابتة، 2–5 إصبع يشير إلى حافة الباب، 5–9 لقطة Macro للغبار، 9–14 خطوة تنظيف واحدة، 14–18 نفس الزاوية بعد.</li><li><strong>التعليق الصوتي:</strong> “الجزء ده لا يظهر في الصورة الواسعة، لكنه أول مكان نراجعه قبل التسليم.”</li><li><strong>النص:</strong> “نفس الزاوية / قبل وبعد”.</li><li><strong>CTA:</strong> “اكتب: أبواب، لو تريد حلقة للأبواب كاملة.”</li><li><strong>TikTok:</strong> يبدأ بالـMacro من أول إطار.</li><li><strong>Instagram:</strong> Cover: “قرب الكاميرا”.</li><li><strong>اختبار:</strong> Hook “قرب هنا” مقابل لقطة إصبع بدون كلام.</li><li><strong>Claim gate:</strong> لا نقول إزالة خدش أو حماية إلا إذا كانت خدمة معتمدة.</li></ul>
+<h3>Reel/TikTok 02 — الفني يختار نقطة البداية</h3>
+<ul class="clean-list"><li><strong>السلسلة:</strong> الفني يقرر.</li><li><strong>المدة:</strong> 22 ثانية.</li><li><strong>السؤال للفني:</strong> “تبدأ منين في العربية دي؟”.</li><li><strong>اللقطات:</strong> الفني ينظر للسيارة، يختار جزءًا، يقول السبب في 5–7 ثوانٍ، ثم لقطة تنفيذ قصيرة.</li><li><strong>الكلام المطلوب:</strong> “هبدأ من ___ لأن ___.”</li><li><strong>CTA:</strong> “اكتب الجزء الذي تريد أن نسأله عنه المرة القادمة.”</li><li><strong>ممنوع:</strong> إجابة محفوظة مثل “نستخدم أفضل المواد” بلا شرح.</li></ul>
+<h3>Reel/TikTok 03 — صوت خطوة واحدة</h3>
+<ul class="clean-list"><li><strong>السلسلة:</strong> اختبار النظافة.</li><li><strong>المدة:</strong> 12 ثانية.</li><li><strong>التنفيذ:</strong> بدون موسيقى. صوت فتح الباب، فرشاة، مسح، إغلاق الباب.</li><li><strong>النص:</strong> “12 ثانية من خطوة واحدة.”</li><li><strong>CTA:</strong> “داخلية أم خارجية للحلقة القادمة؟”.</li><li><strong>اختبار:</strong> صوت طبيعي مقابل موسيقى منخفضة جدًا.</li></ul>
+<h3>Reply 01 — “هل دي صورة معدلة؟”</h3>
+<ul class="clean-list"><li><strong>المدة:</strong> 20 ثانية.</li><li><strong>التنفيذ:</strong> اعرض Before/After مع نفس مكان الهاتف، ثم ضع لقطة قصيرة تُظهر الحامل والإضاءة نفسها.</li><li><strong>الرد:</strong> “لو غيرنا المكان أو النور، المقارنة لا تكون عادلة. لذلك نصور اللقطتين بنفس الطريقة.”</li><li><strong>CTA:</strong> “اكتب الجزء الذي تريد مقارنته.”</li></ul>
+<h3>Carousel Instagram 01</h3>
+<p>“كيف نعرف أن Before/After عادل؟”</p>
+<p class="numbered">1. نفس الزاوية.</p>
+<p class="numbered">2. نفس الإضاءة.</p>
+<p class="numbered">3. نفس المسافة.</p>
+<p class="numbered">4. لا فلتر يغير لون السيارة.</p>
+<p class="numbered">5. وصف ما تغير فقط.</p>
+<hr>
+<h2>الأسبوع 2 — “الأوساخ التي لا تظهر من بعيد”</h2>
+<h3>Reel/TikTok 04 — اختبار الكاميرا القريبة</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> “العربية شكلها نظيف، لكن الكاميرا قربت.”</li><li><strong>المدة:</strong> 20 ثانية.</li><li><strong>اللقطات:</strong> لقطة واسعة، انتقال سريع إلى حواف الزجاج/الكونسول، اختيار جزء واحد، تنظيفه، After.</li><li><strong>Voice-over:</strong> “لا نحكم على السيارة من مترين. نختار جزءًا ونفحصه.”</li><li><strong>CTA:</strong> “اختار: زجاج، كونسول، ولا شنطة؟”.</li></ul>
+<h3>Reel/TikTok 05 — تجربة القفاز الأبيض</h3>
+<ul class="clean-list"><li><strong>السلسلة:</strong> اختبار النظافة.</li><li><strong>المدة:</strong> 15 ثانية.</li><li><strong>التنفيذ:</strong> تمرير قطعة قماش بيضاء على سطح داخلي مناسب قبل التنظيف، ثم بعده. لا نستخدمها لإثبات إزالة جراثيم أو تعقيم.</li><li><strong>النص:</strong> “اختبار بصري فقط، مش تحليل معمل.”</li><li><strong>CTA:</strong> “احفظ الفيديو لوقت تنظيف الداخلية.”</li><li><strong>Claim gate:</strong> لا تستخدم كلمة “معقم” إلا مع خدمة ومواد معتمدة.</li></ul>
+<h3>Reel/TikTok 06 — الفني يرفض خطوة</h3>
+<ul class="clean-list"><li><strong>السلسلة:</strong> الفني يقرر.</li><li><strong>الHook:</strong> “الفني قال: لا نبدأ بالطريقة دي.”</li><li><strong>المحتوى:</strong> الفني يشرح ما الذي سيتجنبه في هذه السيارة ولماذا، ثم يوضح الخطوة البديلة.</li><li><strong>المدة:</strong> 25 ثانية.</li><li><strong>CTA:</strong> “هل تريد حلقة عن أخطاء التنظيف الشائعة؟”.</li><li><strong>ميزة الفكرة:</strong> البراند يثبت أنه لا ينفذ نفس الروتين على كل سيارة.</li></ul>
+<h3>Reply 02 — “هل الغسيل يشيل الخدوش؟”</h3>
+<ul class="clean-list"><li><strong>الرد الحرفي:</strong> “الغسيل والعناية لا تعني إزالة كل الخدوش. نحتاج نشوف الحالة ونوضح المتوقع قبل الخدمة.”</li><li><strong>المشاهد:</strong> Macro لخدش سطحي/وسخ سطحي، بدون وعد بإزالته.</li><li><strong>CTA:</strong> “صوّر الحالة من قريب قبل ما تسأل عن الخدمة.”</li></ul>
+<h3>Carousel Instagram 02</h3>
+<p>“وسخ سطحي أم خدش؟ لا نحكم من صورة بعيدة” مع صور توضيحية من سيارة مصرح بتصويرها، أو رسوم بسيطة لا توحي بأنها نتيجة Saudi Mark.</p>
+<hr>
+<h2>الأسبوع 3 — “الخدمة أثناء يوم العمل”</h2>
+<h3>Reel/TikTok 07 — صاحب السيارة عنده اجتماع</h3>
+<ul class="clean-list"><li><strong>السلسلة:</strong> موقف حقيقي.</li><li><strong>المدة:</strong> 25 ثانية.</li><li><strong>Hook:</strong> “صاحب العربية قال: عندي اجتماع بعد 20 دقيقة.”</li><li><strong>اللقطات:</strong> الساعة، السيارة في موقف مسموح، تأكيد المكان، لقطة عمل، صاحب السيارة يعود ويعاين النتيجة.</li><li><strong>النص:</strong> “المحتوى يثبت ما حدث فقط. لا نعلن وقت وصول ثابتًا قبل اعتماده.”</li><li><strong>CTA:</strong> “اكتب: مكتب، لو هذا السيناريو يناسب يومك.”</li><li><strong>شرط:</strong> لا نستخدم “خلصنا في 20 دقيقة” إلا بقياس حقيقي وموافقة.</li></ul>
+<h3>Reel/TikTok 08 — لقطة الموقف قبل البدء</h3>
+<ul class="clean-list"><li><strong>الفكرة:</strong> بدل فيديو الوصول المبالغ فيه، نوضح ما الذي يجب أن يعرفه الفني قبل البدء: مكان الوقوف، مساحة فتح الأبواب، وجود عوائق.</li><li><strong>المدة:</strong> 20 ثانية.</li><li><strong>Voice-over:</strong> “قبل أول رشّة، نحتاج مكانًا يمكن العمل فيه بأمان.”</li><li><strong>CTA:</strong> “هل موقفك ضيق؟ اكتب وصفه.”</li></ul>
+<h3>Reel/TikTok 09 — صاحب السيارة يختار</h3>
+<ul class="clean-list"><li><strong>التنفيذ:</strong> سؤال على الشاشة: “لو عندك 30 دقيقة، تبدأ بالداخل أم الخارج؟”. يظهر شخص حقيقي يختار، ثم الفني يشرح ما يمكن فعله فعليًا حسب الخدمة المعتمدة.</li><li><strong>المدة:</strong> 15 ثانية.</li><li><strong>CTA:</strong> “اكتب اختيارك.”</li><li><strong>الهدف:</strong> تعليقات حقيقية بدل CTA عام.</li></ul>
+<h3>Reply 03 — “هل أحتاج أكون موجودًا؟”</h3>
+<ul class="clean-list"><li><strong>الرد:</strong> “الإجابة تعتمد على طريقة التسليم والموقع وسياسة التشغيل. لا نعد بإتمام الخدمة دون حضور قبل اعتماد الإجراء.”</li><li><strong>التنفيذ:</strong> فيديو يوضح نقطة التحقق والتسليم، بدون تصوير بيانات العميل.</li></ul>
+<h3>Carousel Instagram 03</h3>
+<p>“قبل التصوير في موقف مكتب: 5 أشياء نراجعها”</p>
+<p>المساحة، الإضاءة، العوائق، خصوصية السيارات الأخرى، وموافقة المكان.</p>
+<hr>
+<h2>الأسبوع 4 — “غبار جدة ومشوار البحر”</h2>
+<h3>Reel/TikTok 10 — السيارة بعد مشوار البحر</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> “المشوار كان حلو. الرمل أقل حلاوة.”</li><li><strong>المدة:</strong> 20 ثانية.</li><li><strong>المشاهد:</strong> رمل ظاهر في موضع واحد، لقطة إزالة حقيقية، النتيجة.</li><li><strong>CTA:</strong> “اكتب: بحر، لو تريد سلسلة خاصة بمشاوير جدة.”</li><li><strong>Claim gate:</strong> لا نقول إن طريقة معينة تمنع دخول الرمل أو تحمي الطلاء إلا بدليل.</li></ul>
+<h3>Reel/TikTok 11 — اختبار الغبار بعد يومين</h3>
+<ul class="clean-list"><li><strong>التنفيذ:</strong> إذا توافرت سيارة مصورة في يومين، نصور نفس السطح بعد 48 ساعة. إذا لم تتوافر، نلغي الفكرة ولا نمثلها.</li><li><strong>النص:</strong> “نرجع لنفس السيارة بعد يومين، إذا توافرت الظروف نفسها.”</li><li><strong>المدة:</strong> 25 ثانية.</li><li><strong>CTA:</strong> “هل تفضلون متابعة النتيجة بعد يومين؟”.</li></ul>
+<h3>Reel/TikTok 12 — الفني يشرح الفرق بين غسيل سريع وعناية أعمق</h3>
+<ul class="clean-list"><li><strong>المدة:</strong> 30 ثانية.</li><li><strong>السؤال:</strong> “هل كل سيارة تحتاج نفس الوقت والخطوات؟”.</li><li><strong>الشرط:</strong> الفني يذكر الفروق التي يعرفها فعليًا، ولا نضع مدة أو سعرًا من عندنا.</li><li><strong>CTA:</strong> “أرسل نوع السيارة فقط، ونقول لك ما الذي نحتاج رؤيته أولًا.”</li></ul>
+<h3>Reply 04 — “هل عندكم شمال جدة؟”</h3>
+<ul class="clean-list"><li><strong>الرد:</strong> “التغطية تعتمد على التشغيل المعتمد. اكتب الحي ونراجع التوفر.”</li><li><strong>ممنوع:</strong> ذكر Central/North/South من صورة التطبيق كأنها تغطية Live.</li></ul>
+<h3>Carousel Instagram 04</h3>
+<p>“لماذا لا نعطي إجابة واحدة لكل سيارات جدة؟”</p>
+<p>الحي، مكان الوقوف، نوع السيارة، حالة السيارة، والخدمة المطلوبة.</p>
+<hr>
+<h2>الأسبوع 5 — “التطبيق لا يبيع وحده”</h2>
+<blockquote>هذا الأسبوع لا يُنشر إلا بعد تحديد ما هو Live فعلًا في التطبيق. الصور الموجودة في الريبو مرجع UI، والأرقام الظاهرة مثل 399 SAR والتقييمات ليست بيانات إنتاجية معتمدة.</blockquote>
+<h3>Reel/TikTok 13 — شاشة واحدة فقط</h3>
+<ul class="clean-list"><li><strong>الموضوع:</strong> اختيار التاريخ والوقت.</li><li><strong>المدة:</strong> 15 ثانية.</li><li><strong>المشاهد:</strong> شاشة واحدة، إصبع يحدد الموعد، Cut إلى تقويم ورقي/هاتف، ثم نص “التوفر النهائي حسب التشغيل”.</li><li><strong>CTA:</strong> “أي شاشة تريد شرحها؟”.</li><li><strong>ممنوع:</strong> عرض كل الشاشات بسرعة لا يفهم منها شيء.</li></ul>
+<h3>Reel/TikTok 14 — من زر الموقع إلى السيارة</h3>
+<ul class="clean-list"><li><strong>الموضوع:</strong> اختيار الموقع إذا كانت الخاصية Live.</li><li><strong>المدة:</strong> 18 ثانية.</li><li><strong>Match cut:</strong> زر اختيار الموقع → لقطة السيارة في الموقع الحقيقي.</li><li><strong>النص:</strong> “اختيار الموقع ليس لقطة جميلة؛ هو جزء من تنفيذ الخدمة.”</li><li><strong>CTA:</strong> “هل تفضل المنزل أم المكتب؟”.</li></ul>
+<h3>Reel/TikTok 15 — اختبار وضوح الحجز</h3>
+<ul class="clean-list"><li><strong>التنفيذ:</strong> شخص من خارج فريق المنتج يحاول فهم شاشة واحدة، ويقول ما الذي لم يفهمه. لا نخفي الالتباس ولا ندعي أن التطبيق مثالي.</li><li><strong>المدة:</strong> 30 ثانية.</li><li><strong>الهدف:</strong> محتوى مختلف يفتح نقاشًا حول تجربة المستخدم.</li><li><strong>CTA:</strong> “ما الكلمة التي تحتاج شرحًا بالعربي؟”.</li></ul>
+<h3>Reply 05 — “هل السعر الظاهر 399؟”</h3>
+<ul class="clean-list"><li><strong>الرد:</strong> “الرقم الظاهر في صورة التطبيق مرجع بصري وليس سعرًا منشورًا معتمدًا. نعلن السعر الفعلي عندما يعتمد.”</li><li><strong>الهدف:</strong> حماية البراند من تحويل Screenshot إلى وعد تجاري.</li></ul>
+<h3>Carousel Instagram 05</h3>
+<p>“كيف نستخدم صور التطبيق بدون تضليل؟”</p>
+<p>نشرح الخطوة، نغطي البيانات غير المعتمدة، ونذكر حالة الخاصية بوضوح.</p>
+<hr>
+<h2>الأسبوع 6 — “الكارتكتر كتعليق، لا كبديل للخدمة”</h2>
+<h3>Reel/TikTok 16 — الكارتكتر يراقب الحواف</h3>
+<ul class="clean-list"><li><strong>المدة:</strong> 10 ثوانٍ.</li><li><strong>التنفيذ:</strong> الكارتكتر يظهر فوق لقطة حقيقية ويضع دائرة على حافة باب، ثم ينسحب ويترك اللقطة للفني.</li><li><strong>النص:</strong> “هو لاحظها. الفني يتأكد منها.”</li><li><strong>CTA:</strong> “ما الجزء الذي يراقبه الكارتكتر بعد ذلك؟”.</li><li><strong>ممنوع:</strong> جعل الكارتكتر ينفذ نتيجة ليست مصورة.</li></ul>
+<h3>Reel/TikTok 17 — الكارتكتر يرد على عادة</h3>
+<ul class="clean-list"><li><strong>الموضوع:</strong> ترك الرمل في فرش السيارة بعد مشوار البحر.</li><li><strong>المدة:</strong> 12 ثانية.</li><li><strong>التنفيذ:</strong> Animation قصيرة، ثم لقطة حقيقية للرمل والخطوة المناسبة.</li><li><strong>CTA:</strong> “ارسلها لصاحب السيارة الذي يفعل ذلك.”</li></ul>
+<h3>Reel/TikTok 18 — Logo مقابل شخصية</h3>
+<ul class="clean-list"><li><strong>الفكرة:</strong> نصف ثانية Logo فقط، ثم الكارتكتر يطرح سؤالًا، ثم لقطة فني.</li><li><strong>الهدف:</strong> اختبار هل الشخصية تساعد على الوصول إلى الخدمة بدل أن تكون زينة.</li><li><strong>CTA:</strong> “هل تفضلون الكارتكتر في البداية أم النهاية؟”.</li></ul>
+<h3>Reply 06 — “لماذا القط؟”</h3>
+<ul class="clean-list"><li><strong>الرد:</strong> “هو شخصية Saudi Mark الرسمية. دوره يعلق ويشرح، لكن النتيجة التي نعرضها تأتي من تصوير الخدمة الحقيقية.”</li><li><strong>المدة:</strong> 15 ثانية.</li></ul>
+<h3>Carousel Instagram 06</h3>
+<p>“أين يظهر الكارتكتر؟”</p>
+<p>التعليق، الانتقال، الـSticker، والـStory. لا نضعه فوق كل Before/After.</p>
+<hr>
+<h2>الأسبوع 7 — “الشفافية في النتيجة”</h2>
+<h3>Reel/TikTok 19 — ماذا لم يتغير؟</h3>
+<ul class="clean-list"><li><strong>الفكرة:</strong> Before/After صادق يذكر شيئًا تحسن وشيئًا لم يتغير لأنه يحتاج خدمة أخرى.</li><li><strong>المدة:</strong> 25 ثانية.</li><li><strong>النص:</strong> “نظفنا هذا الجزء. أما هذا الأثر فليس غسيلًا.”</li><li><strong>CTA:</strong> “هل تريدون حلقات تشرح حدود كل خدمة؟”.</li><li><strong>قوة الفكرة:</strong> تقلل الوعود وتزيد مصداقية المحتوى.</li></ul>
+<h3>Reel/TikTok 20 — مراجعة التسليم</h3>
+<ul class="clean-list"><li><strong>التنفيذ:</strong> الفني يراجع السيارة بقائمة قصيرة: زجاج، حواف، أرضية، مكان اتساخ محدد. يلتقط لقطة قبل التسليم.</li><li><strong>المدة:</strong> 22 ثانية.</li><li><strong>CTA:</strong> “ما آخر جزء تفحصه في عربيتك؟”.</li><li><strong>Claim gate:</strong> لا نسميها “بروتوكولًا معتمدًا” قبل اعتماد SOP.</li></ul>
+<h3>Reel/TikTok 21 — صورة After السيئة</h3>
+<ul class="clean-list"><li><strong>الفكرة:</strong> نعرض صورة After بإضاءة سيئة ونقول: “هذه لا تكفي للنشر”، ثم نعيد التصوير.</li><li><strong>المدة:</strong> 18 ثانية.</li><li><strong>CTA:</strong> “احفظها لو تقارن بين خدمتين.”</li></ul>
+<h3>Reply 07 — “هل يمكن تصوير سيارتي؟”</h3>
+<ul class="clean-list"><li><strong>الرد:</strong> “نعم فقط بعد موافقة واضحة، ويمكن تصوير السيارة بدون وجه أو لوحة أو موقع.”</li><li><strong>الهدف:</strong> تحويل الخصوصية إلى دليل احترام، لا وعد مبالغ فيه.</li></ul>
+<h3>Carousel Instagram 07</h3>
+<p>“ما الذي نحتاج موافقتك عليه قبل تصوير السيارة؟”</p>
+<p>الوجه، اللوحة، المكان، الإعلان المدفوع، وإمكانية حذف اللقطات غير المناسبة.</p>
+<hr>
+<h2>الأسبوع 8 — “ماذا تعلمنا؟”</h2>
+<h3>Reel/TikTok 22 — أكثر سؤال تكرر</h3>
+<ul class="clean-list"><li><strong>التنفيذ:</strong> استخدم السؤال الحقيقي الأكثر تكرارًا في التعليقات، مع لقطة شاشة مطموسة الاسم، ثم الرد.</li><li><strong>المدة:</strong> 25 ثانية.</li><li><strong>CTA:</strong> “ضع سؤالك تحت الفيديو، وقد نرد عليه في الحلقة القادمة.”</li><li><strong>شرط:</strong> لا نخترع السؤال بعد النشر.</li></ul>
+<h3>Reel/TikTok 23 — أي Hook فاز؟</h3>
+<ul class="clean-list"><li><strong>التنفيذ:</strong> عرض أول ثانية من 3 فيديوهات، ثم نتيجة بسيطة: احتفاظ أول 3 ثوانٍ أو عدد الحفظ، بدون تضخيم.</li><li><strong>المدة:</strong> 20 ثانية.</li><li><strong>النص:</strong> “جربنا 3 بدايات. هذه التي أكمل الناس معها أكثر.”</li><li><strong>CTA:</strong> “اختار Hook الشهر القادم.”</li></ul>
+<h3>Reel/TikTok 24 — أفضل Before/After مع طريقة التصوير</h3>
+<ul class="clean-list"><li><strong>التنفيذ:</strong> لا نعرض Montage فقط؛ نعرض الهاتف والحامل ثم اللقطة النهائية.</li><li><strong>المدة:</strong> 25 ثانية.</li><li><strong>CTA:</strong> “أي جزء نختبره في الموسم القادم؟”.</li></ul>
+<h3>Reply 08 — سؤال لم نعرف إجابته بعد</h3>
+<ul class="clean-list"><li><strong>الفكرة:</strong> اختر سؤالًا يحتاج اعتمادًا، وقل ذلك بدل إجابة مصطنعة.</li><li><strong>النص:</strong> “السؤال مهم، لكن لا نملك إجابة معتمدة بعد. سنرجع بالتفصيل عندما يتحدد التشغيل.”</li><li><strong>الهدف:</strong> جعل الصراحة جزءًا من الشخصية.</li></ul>
+<h3>Carousel Instagram 08</h3>
+<p>“ما الذي سنبقيه وما الذي سنوقفه؟”</p>
+<ul class="clean-list"><li>نُبقي الفيديو الذي يثبت مشكلة.</li><li>نُبقي ردود التعليقات الحقيقية.</li><li>نُوقف أي فيديو لا يمكن تصوير نتيجته.</li><li>نُعيد اختبار الكارتكتر حسب بيانات المشاهدة.</li></ul>
+<hr>
+<h1 class="plan-title">6. فروق التنفيذ بين Instagram وTikTok</h1>
+<h2>Instagram Reel</h2>
+<ul class="clean-list"><li>Cover واضح من كلمتين أو ثلاث.</li><li>أول لقطة يمكن فهمها بدون صوت.</li><li>Caption فيه سياق قصير.</li><li>CTA يطلب حفظًا أو تعليقًا محددًا.</li><li>Story في نفس يوم النشر تعيد اللقطة الأقوى مع سؤال.</li></ul>
+<h2>TikTok</h2>
+<ul class="clean-list"><li>يبدأ من اللقطة الأكثر غرابة أو السؤال نفسه.</li><li>لا Intro Logo.</li><li>الكلام الطبيعي للفني أهم من قالب التصميم.</li><li>تعليق مثبت يجيب على الاعتراض المتوقع.</li><li>Reply-to-comment يستخدم نفس قالب السؤال الأصلي على الشاشة.</li></ul>
+<h3>مثال واحد لنفس الفكرة</h3>
+<p><strong>فكرة حافة الباب:</strong></p>
+<ul class="clean-list"><li>Instagram: يبدأ بلقطة السيارة، ثم Cover “قرب الكاميرا”، ثم Caption يشرح المقارنة.</li><li>TikTok: يبدأ بالـMacro والغبار مع جملة “من بعيد مش هتشوفه”، ثم ينتهي بالسؤال.</li></ul>
+<p>لا نرفع نفس الملف بالـWatermark على المنصتين.</p>
+<hr>
+<h1 class="plan-title">7. Stories من يوم التصوير</h1>
+<p>لا نحتاج 20 Story مصممة. من كل سيارة نأخذ:</p>
+<p class="numbered">1. Poll: “داخلية أم خارجية؟”.</p>
+<p class="numbered">2. لقطة المشكلة بدون لوحة.</p>
+<p class="numbered">3. سؤال للفني.</p>
+<p class="numbered">4. لقطة صوت حقيقية.</p>
+<p class="numbered">5. Before ثابت.</p>
+<p class="numbered">6. After ثابت.</p>
+<p class="numbered">7. سؤال الجمهور للحلقة القادمة.</p>
+<p>نحفظ القصص في Highlights:</p>
+<ul class="clean-list"><li>قبل/بعد.</li><li>الفني.</li><li>أسئلة.</li><li>التطبيق.</li><li>الكارتكتر.</li><li>جدة.</li></ul>
+<p>إذا لم توجد سيارة حقيقية، لا ننشر Story توحي بوجود تنفيذ في ذلك اليوم.</p>
+<hr>
+<h1 class="plan-title">8. طريقة التصوير الأسبوعية</h1>
+<h2>جلسة واحدة، 90 دقيقة، سيارة واحدة</h2>
+<h3>أول 15 دقيقة</h3>
+<ul class="clean-list"><li>إذن التصوير.</li><li>تصوير Wide قبل.</li><li>تصوير Macro للمشكلة.</li><li>تسجيل سؤال الفني.</li></ul>
+<h3>45 دقيقة</h3>
+<ul class="clean-list"><li>تصوير خطوة واحدة من أعلى.</li><li>تصوير يد الفني.</li><li>تسجيل صوت طبيعي.</li><li>تصوير لقطة انتقال واحدة.</li></ul>
+<h3>آخر 30 دقيقة</h3>
+<ul class="clean-list"><li>After من نفس الزاوية.</li><li>مراجعة التسليم.</li><li>رد قصير من صاحب السيارة إذا وافق.</li><li>صور Carousel وStory.</li></ul>
+<h3>مخرجات الجلسة</h3>
+<ul class="clean-list"><li>فيديو اختبار نظافة.</li><li>فيديو الفني.</li><li>فيديو Reply أو موقف.</li><li>فيديو صوت/تفصيل.</li><li>Carousel.</li><li>6–8 Stories.</li></ul>
+<p>إذا احتاجت فكرة أكثر من جلسة، نكتب ذلك قبل اعتمادها ولا نضغط 4 أفكار في يوم غير واقعي.</p>
+<hr>
+<h1 class="plan-title">9. قياس كل فيديو</h1>
+<p>نملأ الجدول بعد 48 ساعة وبعد 7 أيام:</p>
+<div class="table-wrap"><table><thead><tr><th>المؤشر</th><th>لماذا نقرأه؟</th></tr></thead><tbody><tr><td>مشاهدة أول 3 ثوانٍ</td><td>هل الـHook مفهوم؟</td></tr><tr><td>متوسط وقت المشاهدة</td><td>هل الفكرة حافظت على الانتباه؟</td></tr><tr><td>نسبة الإكمال</td><td>هل المدة مناسبة؟</td></tr><tr><td>Saves</td><td>هل الفكرة مفيدة أو قابلة للرجوع؟</td></tr><tr><td>Shares</td><td>هل فيها موقف يرسله الناس؟</td></tr><tr><td>Comments بجدة/نوع سيارة</td><td>هل وصلت للجمهور المحلي؟</td></tr><tr><td>Profile visits</td><td>هل البراند أثار فضولًا؟</td></tr><tr><td>أسئلة عن التوفر</td><td>هل هناك نية شراء؟</td></tr><tr><td>تكلفة المشاهدة عند الترويج</td><td>هل النسخة المدفوعة تستحق؟</td></tr></tbody></table></div>
+<h3>قرار المحتوى</h3>
+<ul class="clean-list"><li><strong>احتفاظ جيد + أسئلة قليلة:</strong> أعد نفس الفكرة مع CTA أوضح.</li><li><strong>احتفاظ ضعيف + لقطة قوية متأخرة:</strong> انقل اللقطة إلى أول ثانية.</li><li><strong>مشاهدات كثيرة + لا زيارات:</strong> المشكلة في الربط بالبراند أو النهاية.</li><li><strong>تعليقات خارج جدة:</strong> ضيق الاستهداف أو وضح جدة في الكلام.</li><li><strong>أسئلة عن خدمة غير جاهزة:</strong> أوقف الترويج وعدّل الـCTA.</li><li><strong>حفظ ومشاركة جيدان:</strong> اصنع حلقة ثانية، لا تكرر نفس الفيديو حرفيًا.</li></ul>
+<p>لا نستخدم رقمًا مستهدفًا للمشاهدات قبل وجود خط أساس من أول أسبوعين.</p>
+<hr>
+<h1 class="plan-title">10. الإعلان المدفوع على Instagram وTikTok فقط</h1>
+<p>لا نمول 24 فكرة من أول يوم.</p>
+<h2>المرحلة الأولى: عضوي</h2>
+<ul class="clean-list"><li>أول أسبوعين: نشر واختبار فقط.</li><li>اختيار أفضل 3 فيديوهات بناءً على الاحتفاظ، الحفظ، والأسئلة المحلية.</li></ul>
+<h2>المرحلة الثانية: ترويج</h2>
+<ul class="clean-list"><li>Instagram: ترويج Reel الأفضل أو حملة Video Views/Profile Visits.</li><li>TikTok: Spark Ad لفيديو طبيعي، لا نسخة إعلان مصطنعة.</li><li>تقسيم الاختبار بين المنصتين بدل افتراض أن نفس الفيديو يفوز في الاثنين.</li><li>CTA واحد: “اكتب الحي”، أو “اكتب نوع السيارة”، أو “شاهد شرح الحجز”.</li></ul>
+<h2>ميزانية اختبارية لمدة 8 أسابيع</h2>
+<div class="table-wrap"><table><thead><tr><th>المستوى</th><th>إجمالي</th><th>Instagram</th><th>TikTok</th><th>إنتاج وتجارب</th></tr></thead><tbody><tr><td>اختبار صغير</td><td>4,000 SAR</td><td>1,200</td><td>1,200</td><td>1,600</td></tr><tr><td>اختبار متوسط</td><td>8,000 SAR</td><td>2,400</td><td>2,400</td><td>3,200</td></tr><tr><td>اختبار أكبر</td><td>16,000 SAR</td><td>4,800</td><td>4,800</td><td>6,400</td></tr></tbody></table></div>
+<p>الأرقام تقديرية. لا نستخدمها كتوقع مبيعات، ولا نرفع الميزانية قبل أن يثبت المحتوى أن الجمهور المحلي يسأل ويتفاعل.</p>
+<h2>نوقف الإعلان عندما</h2>
+<ul class="clean-list"><li>الفيديو لا يحتفظ بالمشاهد في أول ثوانٍ.</li><li>الأسئلة تأتي عن سعر أو خاصية غير معتمدة.</li><li>الجمهور خارج جدة رغم الاستهداف.</li><li>لا يوجد شخص يرد على التعليقات.</li><li>الإعلان يحقق مشاهدات فقط ولا يرفع زيارات أو أسئلة.</li></ul>
+<hr>
+<h1 class="plan-title">11. ما نحتاجه قبل بدء الأسبوع الأول</h1>
+<p>هذه ليست تفاصيل ثانوية؛ بدونها سننتج محتوى يلمح إلى وعود غير جاهزة:</p>
+<ul class="clean-list"><li>هل توجد سيارة تجريبية للتصوير كل أسبوع؟</li><li>من الشخص الذي سيظهر كفني؟</li><li>ما الخدمات التي تعمل فعلًا الآن؟</li><li>ما الأحياء التي يمكن ذكرها؟</li><li>هل التغطية داخل جدة معتمدة أم ما زالت <code>PENDING</code>؟</li><li>هل التطبيق Live؟ وما الشاشة التي نعرضها؟</li><li>هل سعر 399 SAR معتمد أم UI reference فقط؟</li><li>هل يمكن تصوير العملاء؟</li><li>هل يمكن استخدام اللقطات في إعلانات مدفوعة؟</li><li>من يراجع الادعاءات قبل النشر؟</li><li>من يرد على التعليقات في نفس اليوم؟</li></ul>
+<hr>
+<h1 class="plan-title">12. قاعدة قبول الفكرة</h1>
+<p>لا تُقبل الفكرة للنشر إلا إذا حققت 5 شروط:</p>
+<p class="numbered">1. فيها مشكلة أو قرار أو اختبار واضح في أول ثانية.</p>
+<p class="numbered">2. يمكن تصويرها بهاتف وفي مكان حقيقي.</p>
+<p class="numbered">3. نتيجتها يمكن رؤيتها أو سماعها أو شرحها من شخص حقيقي.</p>
+<p class="numbered">4. لها CTA واحد يمكن قياسه.</p>
+<p class="numbered">5. لا تحتاج ادعاءً غير معتمد كي تبدو جيدة.</p>
+<p>لو كانت الفكرة لا تعمل إلا مع جملة مثل “الأفضل” أو “الأسرع” أو “الأوفر”، فهي ليست جاهزة.</p>
+<hr>
+<h1 class="plan-title">13. خلاصة النسخة v2</h1>
+<p>بعد 8 أسابيع، يجب أن يكون لدينا:</p>
+<ul class="clean-list"><li>24 فيديوًا رئيسيًا مبنيًا على اختبارات ومواقف.</li><li>8 فيديوهات Reply to Comment من أسئلة حقيقية.</li><li>8 Carousels Instagram قابلة للحفظ.</li><li>مكتبة Before/After عادلة.</li><li>إجابات موثقة على اعتراضات السعر، الخدوش، التغطية، الحجز، والخصوصية.</li><li>معرفة عملية: أي Hook وأي سلسلة وأي منصة تجلب اهتمامًا محليًا.</li><li>قائمة واضحة بما يجب تحسينه قبل زيادة الإعلان.</li></ul>
+<p>الفكرة ليست أن يبدو الحساب كبيرًا. المطلوب أن يبدو صادقًا، دقيقًا، وأن يجعل صاحب السيارة يعرف ماذا سيرى قبل أن يطلب الخدمة.</p>
+<hr>
+<h2>مراجع الأصول</h2>
+<ul class="clean-list"><li><a href="../research/saudi-car-wash-competitive-report.md">تقرير منافسي السوق</a></li><li><a href="../assets/brand/README.md">الكارتكتر الرسمي</a></li><li><a href="../assets/app-ui/README.md">مراجع واجهات التطبيق</a></li><li><a href="saudi-mark-60-day-marketing-plan-ar.md">الخطة السابقة للمقارنة</a></li></ul>
+</section>
+<section class="asset-page content">
+  <h2>مرجع الهوية والتطبيق المستخدم في الخطة</h2>
+  <p class="asset-intro">الأصول التالية مملوكة/مقدمة من صاحب البراند، وتُستخدم كمرجع بصري للمحتوى، الإعلانات، العروض، وتجربة الحجز. الأسعار والأرقام الظاهرة في واجهات التطبيق ليست اعتمادًا إنتاجيًا.</p>
+  <div class="character-card"><img src="file:///home/ubuntu/projects/saudi-mark/assets/brand/saudi-mark-character-reference.jpg" alt="Saudi Mark character"><div><strong>كارتكتر Saudi Mark الرسمي</strong><p>قط أبيض ودود بكاب أزرق ونظارة حماية وشال أزرق وخرطوم أزرق/أصفر. يظهر في الـmotion والـStories والتغليف دون استبدال لقطات الخدمة الحقيقية.</p></div></div>
+  <h3>Application UI references</h3>
+  <div class="app-grid"><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/01-splash-screen.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>01 splash screen</figcaption></figure><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/02-booking-date-slot-vehicle.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>02 booking date slot vehicle</figcaption></figure><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/03-home-dashboard.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>03 home dashboard</figcaption></figure><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/04-booking-location-gifts.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>04 booking location gifts</figcaption></figure><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/05-booking-vehicle-location.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>05 booking vehicle location</figcaption></figure><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/06-booking-mode-service-zone.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>06 booking mode service zone</figcaption></figure></div>
+</section>
+</div>
+</body>
+</html>

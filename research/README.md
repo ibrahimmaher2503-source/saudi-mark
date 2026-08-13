@@ -8,10 +8,10 @@
 - `saudi-mark-content-ideas.md`: 15 فكرة أصلية وسلسلة محتوى.
 - `saudi-car-wash-competitive-report.md`: تقرير السوق والمنافسين في السعودية مع تركيز على جدة، ومصادر وروابط التحقق.
 - `../exports/saudi-car-wash-competitive-report.pdf`: نسخة PDF منسقة تشمل صفحات السوشيال ونقاط القوة والضعف.
-- `../marketing/saudi-mark-60-day-marketing-plan-ar.md`: خطة تسويق وسوشيال ميديا تنفيذية لمدة 60 يومًا، تشمل الجمهور، التموضع، المحتوى، المناسبات، الإعلانات، الميزانية، CRM، القياس، وبيانات `PENDING`.
-- `../exports/saudi-mark-60-day-marketing-plan-ar.pdf`: نسخة PDF عربية RTL منسقة للخطة، تشمل الكارتكتر ومراجع واجهات التطبيق.
-- `../exports/saudi-mark-60-day-marketing-plan-ar.html`: نسخة HTML المصدر القابلة للطباعة.
-- `../marketing/render_marketing_plan.py`: سكربت توليد HTML/PDF للخطة.
+- `../marketing/saudi-mark-instagram-tiktok-plan-v2-ar.md`: النسخة v2 الأدق، مبنية على أربع سلاسل إنتاجية، 24 فيديوًا رئيسيًا، 8 Reply videos، و8 Carousels لإنستجرام.
+- `../exports/saudi-mark-instagram-tiktok-plan-v2-ar.pdf`: PDF مستقل للنسخة v2.
+- `../exports/saudi-mark-instagram-tiktok-plan-v2-ar.html`: نسخة HTML القابلة للطباعة للنسخة v2.
+- `../marketing/render_saudi_mark_v2.py`: سكربت توليد PDF النسخة v2.
 - `../prompts/omni/ready-video-prompts.md`: 10 Prompts جاهزة لتوليد فيديو clips عبر Flow/Gemini Omni.
 - `../prompts/capcut/ready-copy-and-sound.md`: نصوص عربية وتوقيتات ومؤثرات صوتية لـCapCut.
 
