@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>Saudi Mark — خطة التسويق والسوشيال ميديا لمدة 60 يومًا</title>
+<style>
+@page { size:A4; margin:14mm 12mm 16mm; }
+:root { --ink:#152437; --muted:#647487; --line:#d7e1e8; --navy:#092a3b; --teal:#087f8c; --blue:#1261a0; --yellow:#f5b841; --soft:#f3f8fa; --paper:#fff; }
+* { box-sizing:border-box; }
+html,body { margin:0; padding:0; background:#e8eef2; color:var(--ink); font-family:"DejaVu Sans",Arial,sans-serif; direction:rtl; }
+body { font-size:9.4pt; line-height:1.68; }
+.page { max-width:210mm; margin:0 auto; background:var(--paper); }
+.cover { min-height:267mm; page-break-after:always; color:white; padding:27mm 22mm 18mm; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; background:linear-gradient(135deg,#071e2e 0%,#0b4258 53%,#087f8c 100%); }
+.cover:before { content:""; position:absolute; width:200mm; height:200mm; border:1px solid rgba(255,255,255,.13); border-radius:50%; left:-100mm; bottom:-96mm; }
+.cover:after { content:""; position:absolute; width:95mm; height:95mm; border:1px solid rgba(245,184,65,.38); border-radius:50%; right:-55mm; top:-38mm; }
+.cover .mark { position:relative; z-index:1; display:flex; align-items:center; gap:8mm; }
+.cover .mark img { width:28mm; height:28mm; object-fit:cover; border-radius:50%; border:2px solid rgba(255,255,255,.75); }
+.cover .eyebrow { position:relative; z-index:1; color:#ffd166; font-size:9pt; font-weight:bold; letter-spacing:.1em; }
+.cover h1 { position:relative; z-index:1; max-width:160mm; font-size:31pt; line-height:1.34; margin:14mm 0 6mm; }
+.cover .subtitle { position:relative; z-index:1; max-width:142mm; font-size:15pt; line-height:1.65; color:#e2f0f2; }
+.cover .positioning { position:relative; z-index:1; border-right:4px solid var(--yellow); padding:4mm 5mm; margin-top:10mm; max-width:150mm; background:rgba(255,255,255,.08); font-size:12pt; font-weight:bold; }
+.cover .meta { position:relative; z-index:1; border-top:1px solid rgba(255,255,255,.35); padding-top:7mm; display:grid; grid-template-columns:1fr 1fr; gap:5mm; color:#d8e9ed; }
+.cover .meta strong { display:block; color:white; font-size:10pt; }
+.cover .badge { display:inline-block; position:relative; z-index:1; background:var(--yellow); color:#152437; padding:1.8mm 4mm; border-radius:20px; margin-top:7mm; font-weight:bold; }
+.content { padding:0 2mm 10mm; }
+.plan-title { display:none; }
+h2 { margin:11mm 0 4mm; padding:2.7mm 4mm 2.2mm; border-right:4px solid var(--yellow); background:linear-gradient(90deg,#eef7f8,transparent); color:#08495d; font-size:16pt; line-height:1.4; page-break-after:avoid; }
+h3 { margin:6.5mm 0 2mm; color:var(--teal); font-size:12.2pt; page-break-after:avoid; }
+h4 { margin:4mm 0 1.5mm; color:var(--blue); font-size:10.8pt; page-break-after:avoid; }
+p { margin:0 0 2.8mm; }
+a { color:var(--teal); text-decoration:none; font-weight:600; }
+hr { border:0; border-top:1px solid var(--line); margin:6mm 0; }
+blockquote { margin:4mm 0; padding:3.5mm 4.5mm; background:#edf8f8; border-right:4px solid var(--teal); color:#134e61; font-size:11.5pt; font-weight:600; page-break-inside:avoid; }
+.clean-list { margin:1mm 0 3.5mm; padding:0 6mm 0 0; }
+.clean-list li { margin:1mm 0; padding-right:1mm; }
+.numbered { margin:1.3mm 0; }
+.table-wrap { width:100%; overflow:visible; margin:3mm 0 5mm; page-break-inside:auto; }
+table { width:100%; border-collapse:collapse; table-layout:fixed; font-size:7.15pt; line-height:1.4; direction:rtl; }
+th { background:#0b4258; color:white; padding:1.9mm 1.5mm; border:1px solid #083548; font-weight:bold; vertical-align:top; }
+td { padding:1.7mm 1.45mm; border:1px solid var(--line); vertical-align:top; overflow-wrap:anywhere; }
+tr:nth-child(even) td { background:#f5f8fa; }
+thead { display:table-header-group; }
+tr { page-break-inside:avoid; }
+pre { direction:ltr; text-align:left; background:#142534; color:#d9f1f0; padding:3mm; border-radius:2mm; font-size:7.5pt; white-space:pre-wrap; }
+code { font-family:"DejaVu Sans Mono",monospace; font-size:.88em; }
+del { color:#8c3b35; }
+.asset-page { page-break-before:always; padding-top:8mm; }
+.asset-page h2 { margin-top:0; }
+.asset-intro { color:var(--muted); }
+.character-card { display:grid; grid-template-columns:48mm 1fr; gap:7mm; align-items:center; margin:5mm 0 8mm; padding:5mm; background:var(--soft); border:1px solid var(--line); }
+.character-card img { width:48mm; height:45mm; object-fit:cover; border-radius:5mm; }
+.character-card strong { color:#08495d; font-size:12pt; }
+.app-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:5mm; margin-top:5mm; }
+.app-grid figure { margin:0; padding:2.5mm; background:#f7fafb; border:1px solid var(--line); border-radius:3mm; break-inside:avoid; }
+.app-grid img { display:block; width:100%; height:65mm; object-fit:cover; object-position:top; border-radius:2mm; }
+.app-grid figcaption { font-size:7.3pt; color:var(--muted); margin-top:1.5mm; text-align:center; }
+@media print { html,body { background:#fff; } .page { max-width:none; } a { color:inherit; } }
+</style>
+</head>
+<body>
+<div class="page">
+<section class="cover">
+  <div>
+    <div class="mark"><img src="file:///home/ubuntu/projects/saudi-mark/assets/brand/saudi-mark-character-reference.jpg" alt="Saudi Mark brand character"><span class="eyebrow">SAUDI MARK · GROWTH PLAYBOOK</span></div>
+    <h1>خطة التسويق والسوشيال ميديا</h1>
+    <div class="subtitle">خطة تنفيذية كاملة لمدة 60 يومًا لقيادة الطلب وبناء الثقة في سوق العناية المتنقلة بالسيارات في جدة.</div>
+    <div class="positioning">عناية سيارات متنقلة فاخرة في جدة، بموعد واضح ونتيجة يمكن رؤيتها.</div>
+    <div class="badge">نسخة عربية تنفيذية · 2026</div>
+  </div>
+  <div class="meta">
+    <div><strong>الفترة التنفيذية</strong>17 أغسطس – 11 أكتوبر 2026</div>
+    <div><strong>نافذة المراقبة</strong>13 أغسطس – 13 نوفمبر 2026</div>
+    <div><strong>السوق الأساسي</strong>جدة أولًا</div>
+    <div><strong>تاريخ الإعداد</strong>13 أغسطس 2026</div>
+  </div>
+</section>
+<section class="content">
+<h1 class="plan-title">Saudi Mark — خطة التسويق والسوشيال ميديا لمدة 60 يومًا</h1>
+<p><strong>الفترة التنفيذية:</strong> 17 أغسطس – 11 أكتوبر 2026  </p>
+<p><strong>نافذة المراقبة الموسمية:</strong> 13 أغسطس – 13 نوفمبر 2026  </p>
+<p><strong>السوق:</strong> جدة أولًا، مع قابلية التوسع لاحقًا  </p>
+<p><strong>نوع الخطة:</strong> Brand launch + demand generation + proof of service  </p>
+<p><strong>تاريخ إعداد الخطة:</strong> 13 أغسطس 2026</p>
+<blockquote><strong>ملاحظة تنفيذية:</strong> هذه خطة عمل تسويقية وليست اعتمادًا للأسعار أو التغطية أو الجاهزية التشغيلية. أي سعر، منطقة، خصم، تقييم، عدد غسلات، وقت وصول، أو وعد بيئي يجب أن يبقى <code>PENDING</code> حتى يعتمد من صاحب البراند والتشغيل.</blockquote>
+<hr>
+<h2>1. الملخص التنفيذي</h2>
+<p>Saudi Mark لا ينبغي أن يدخل جدة برسالة عامة مثل: <strong>“غسيل سيارات متنقل بأفضل سعر”</strong>؛ الرسالة موجودة عند NIXT وغسلها ومنصات كثيرة. المساحة الأقوى هي:</p>
+<blockquote><strong>عناية سيارات متنقلة فاخرة في جدة، بموعد واضح ونتيجة يمكن رؤيتها.</strong></blockquote>
+<p>الخطة تبني الطلب على أربع مراحل:</p>
+<p class="numbered">1. <strong>التأسيس:</strong> تثبيت الهوية، العرض، الحسابات، WhatsApp، التتبع، وأصول المحتوى.</p>
+<p class="numbered">2. <strong>إثبات الثقة:</strong> قبل/بعد، لقطات حقيقية، معيار تسليم، وجه الكارتكتر، وآراء العملاء.</p>
+<p class="numbered">3. <strong>تحويل الطلب:</strong> حملات رسائل/حجز مع إعادة استهداف المشاهدين والمتفاعلين.</p>
+<p class="numbered">4. <strong>الاحتفاظ:</strong> إعادة الحجز، نقاط/عضوية، إحالة، ومحتوى ما بعد الخدمة.</p>
+<p>الخطة لا تعتمد على الخصم وحده. العرض الأساسي يجب أن يبيع <strong>الراحة + الجودة + الالتزام</strong>، مع عروض اختبارية محدودة وواضحة.</p>
+<hr>
+<h2>2. ما نعرفه عن البراند والمنتج</h2>
+<h3>2.1 الهوية</h3>
+<ul class="clean-list"><li>شخصية البراند: نظيفة، ودودة، عملية، Premium بدون تكلف.</li><li>الكارتكتر الرسمي: قط أبيض يرتدي كاب Saudi Mark ونظارة حماية وشال أزرق ويحمل خرطومًا أزرق/أصفر.</li><li>الألوان المرجعية: أزرق Saudi Mark، كحلي داكن، أبيض، وأصفر accent.</li><li>الرسالة المقترحة: <strong>سيارتك تحتاج عناية؟ لا تروح… إحنا نجيك.</strong></li><li>التموضع المقترح: <strong>نجيك بموعد واضح ونعتني بسيارتك بطريقة يمكن إثباتها.</strong></li></ul>
+<h3>2.2 مراجع التطبيق</h3>
+<p>صور التطبيق المملوكة للبراند تشير إلى منتج أوسع من غسلة منفردة:</p>
+<ul class="clean-list"><li>Home dashboard.</li><li>Packages / subscriptions.</li><li>Membership / rewards / points.</li><li>Booking by zone, date, slot, vehicle, and location.</li><li>Gift this service.</li><li>Free gifts and add-ons.</li><li>Jeddah Central / North / South.</li><li>Vehicle profiles.</li><li>Trust metrics and service tracking.</li></ul>
+<p><strong>قاعدة:</strong> نستخدم صور التطبيق لإظهار سهولة التجربة، لكن لا ننشر أرقامًا أو أسعارًا ظاهرة في الصور باعتبارها Live data قبل الاعتماد.</p>
+<h3>2.3 المنافسة التي تحدد الخطة</h3>
+<div class="table-wrap"><table><thead><tr><th>المنافس/النموذج</th><th>ما نراقبه</th><th>رد Saudi Mark</th></tr></thead><tbody><tr><td>Sweater</td><td>الانتشار، التطبيق، التتبع، الاشتراكات وB2B</td><td>نكسب محليًا بالالتزام والـproof، لا بعدد المدن</td></tr><tr><td>Purely</td><td>البخار، الباقات والاشتراكات، وجود جدة</td><td>نبسط الباقات ونثبت النتيجة بدل ازدحام الوعود</td></tr><tr><td>RinseNGo</td><td>أقرب منافس Premium متنقل في جدة</td><td>ننافسه بسرعة بناء التقييمات، الموعد، والصور الحقيقية</td></tr><tr><td>Claro / Ghassl / Captainz</td><td>تجربة التطبيق والتتبع والدفع</td><td>نبدأ بـWhatsApp وتجربة حجز ممتازة قبل تعقيد التطبيق</td></tr><tr><td>NIXT / غسلها</td><td>السعر، العروض، Instagram/TikTok والانتشار المحلي</td><td>لا ندخل حرب 19–29 ريال؛ نبيع قيمة واضحة</td></tr><tr><td>Royal Steam / Detail Masters / Refinox</td><td>الفخامة، الحماية، detailing الثابت</td><td>نأخذ معيار الفخامة ونضيف الوصول للعميل</td></tr></tbody></table></div>
+<hr>
+<h2>3. أهداف الشهرين</h2>
+<h3>3.1 أهداف العمل</h3>
+<p class="numbered">1. إثبات أن جدة تستطيع توليد طلبات متكررة من عرض Saudi Mark.</p>
+<p class="numbered">2. بناء مكتبة حقيقية من صور قبل/بعد وشهادات العملاء.</p>
+<p class="numbered">3. تحديد أفضل شريحة وأفضل منطقة وأفضل رسالة.</p>
+<p class="numbered">4. تحويل Instagram/TikTok/Google/WhatsApp إلى مسار حجز قابل للقياس.</p>
+<p class="numbered">5. اختبار إعادة الحجز والعضوية قبل طرح اشتراك واسع.</p>
+<h3>3.2 أهداف قابلة للقياس — Targets وليست نتائج مضمونة</h3>
+<div class="table-wrap"><table><thead><tr><th>المجال</th><th>هدف 60 يومًا المقترح</th></tr></thead><tbody><tr><td>فيديوهات قصيرة أصلية</td><td>32 فيديو، 4 أسبوعيًا</td></tr><tr><td>Carousel / صور تعليمية</td><td>16 منشورًا، 2 أسبوعيًا</td></tr><tr><td>Stories</td><td>5 أيام أسبوعيًا على الأقل</td></tr><tr><td>حالات WhatsApp</td><td>تحديث يومي في أيام التشغيل</td></tr><tr><td>تجارب/حجوزات موثقة</td><td>20–30 تجربة أولية قبل التوسع الإعلاني</td></tr><tr><td>UGC / تقييمات</td><td>2–3 قطع محتوى أو تقييمات أسبوعيًا بعد موافقة العميل</td></tr><tr><td>سرعة الرد خلال ساعات العمل</td><td>الهدف التشغيلي: أقل من 5 دقائق</td></tr><tr><td>نسبة تحويل الرسائل إلى حجز</td><td>هدف اختبار أولي: 10–20%، ويُستبدل بالخط الأساسي الحقيقي بعد أول أسبوعين</td></tr><tr><td>إعادة الحجز خلال 30 يومًا</td><td>هدف اختبار أولي: 15–25% حسب نوع الخدمة</td></tr><tr><td>تكلفة Lead</td><td>لا تُحدد قبل معرفة متوسط الهامش والتذكرة؛ سجّلها أسبوعيًا حسب الحملة</td></tr></tbody></table></div>
+<p>لا نعتبر المشاهدات نجاحًا مستقلًا. النجاح = <strong>مشاهدة مؤهلة → رسالة → حجز → وصول → نتيجة → إعادة حجز</strong>.</p>
+<hr>
+<h2>4. الجمهور المستهدف في جدة</h2>
+<h3>4.1 الشريحة الأساسية: أصحاب السيارات الفاخرة</h3>
+<ul class="clean-list"><li>العمر التقريبي: 25–45.</li><li>مناطق محتملة: أحياء Premium ومجمعات سكنية ومكاتب، وتُعتمد المناطق بعد اختبار القدرة التشغيلية.</li><li>الدافع: الحفاظ على الطلاء، الراحة، الخصوصية، الثقة، وتوفير الوقت.</li><li>الاعتراض: “هل الخدمة ستخدش السيارة؟ هل ستصل في موعدها؟”.</li><li>الرسالة: <strong>عناية محترمة لسيارتك، عند بابك، بدون انتظار.</strong></li></ul>
+<h3>4.2 الموظفون وسكان الأبراج والمكاتب</h3>
+<ul class="clean-list"><li>الدافع: تنفيذ الخدمة أثناء العمل.</li><li>الاعتراض: عدم القدرة على انتظار الفني.</li><li>الرسالة: <strong>احجز نافذة واضحة وخلي سيارتك تخلص وأنت في مكتبك.</strong></li></ul>
+<h3>4.3 العائلات وأصحاب أكثر من سيارة</h3>
+<ul class="clean-list"><li>الدافع: الراحة، الباقات، هدية الخدمة، وإدارة أكثر من مركبة.</li><li>الرسالة: <strong>نظافة البيت تبدأ من السيارات التي تتحرك بها الأسرة.</strong></li></ul>
+<h3>4.4 الشركات والأساطيل الصغيرة</h3>
+<ul class="clean-list"><li>شركات، مكاتب، معارض، فنادق، أبراج، وشركات توصيل.</li><li>الدافع: SLA، فواتير، جدول، تقارير، وخدمة في الموقع.</li><li>الرسالة: <strong>أسطول أنظف بدون تعطيل التشغيل.</strong></li><li>لا نعلن B2B كجاهز إلا بعد اعتماد قدرة الفريق والفوترة والتغطية.</li></ul>
+<h3>4.5 شريحة الهدايا والمناسبات</h3>
+<ul class="clean-list"><li>هدية لزوج/زوجة/أب/صديق/موظف.</li><li>التطبيق يحتوي مرجعًا بصريًا لفكرة <strong>Gift this service</strong> والهدايا.</li><li>الرسالة: <strong>مش لازم تشتري هدية عادية؛ ابعت له عناية لسيارته.</strong></li></ul>
+<hr>
+<h2>5. استراتيجية التموضع والرسائل</h2>
+<h3>5.1 Positioning statement</h3>
+<blockquote><strong>لأصحاب السيارات في جدة الذين يريدون نتيجة نظيفة بدون تعطيل يومهم، Saudi Mark هي خدمة عناية سيارات متنقلة تصل إلى موقعك بموعد واضح ونتيجة موثقة قبل/بعد، بدل تجربة مغسلة غير متوقعة.</strong></blockquote>
+<h3>5.2 أعمدة الوعد</h3>
+<p class="numbered">1. <strong>Reliable arrival:</strong> نافذة وصول، تأكيد قبل الحضور، ونظام تعويض/معالجة <code>PENDING</code>.</p>
+<p class="numbered">2. <strong>Visible finish:</strong> صورة قبل/بعد ومعيار فحص.</p>
+<p class="numbered">3. <strong>Care-safe process:</strong> مواد وأدوات مناسبة للطلاء والداخلية، مع شرح واضح.</p>
+<p class="numbered">4. <strong>Jeddah-native:</strong> فهم المناطق، الحرارة، الرطوبة، الغبار، والمواقف.</p>
+<p class="numbered">5. <strong>Friendly brand:</strong> الكارتكتر يجعل البراند قريبًا، بدون تحويل Premium إلى براند بارد.</p>
+<h3>5.3 مصفوفة الرسائل</h3>
+<div class="table-wrap"><table><thead><tr><th>الرسالة</th><th>المشكلة</th><th>الدليل المطلوب</th><th>CTA</th></tr></thead><tbody><tr><td>“المغسلة تجيك”</td><td>مشوار وانتظار</td><td>موقع قبل/بعد ووقت وصول فعلي</td><td>احجز من WhatsApp</td></tr><tr><td>“موعد واضح”</td><td>الفني يتأخر أو لا يحضر</td><td>نافذة حجز وتأكيدات حقيقية</td><td>أرسل موقعك</td></tr><tr><td>“نتيجة تُرى”</td><td>كل مغسلة تقول احترافية</td><td>Before/After بإضاءة متسقة</td><td>شوف الفرق واحجز</td></tr><tr><td>“عناية لسيارتك الفاخرة”</td><td>خوف الخدوش والمواد</td><td>شرح الأدوات والبروتوكول</td><td>اسأل عن الباقة المناسبة</td></tr><tr><td>“هدية مختلفة”</td><td>هدية مكررة</td><td>Gift flow / بطاقة هدية معتمدة</td><td>أرسل هدية عناية</td></tr><tr><td>“للأسطول”</td><td>تعطيل الموظفين والسيارات</td><td>جدول/تقرير/SLA معتمد</td><td>اطلب عرض شركات</td></tr></tbody></table></div>
+<h3>5.4 ما لا نقوله</h3>
+<ul class="clean-list"><li>“الأرخص في جدة”.</li><li>“مضمون 100%” بدون سياسة مكتوبة.</li><li>“نصل في أي مكان” قبل اعتماد نطاق التغطية.</li><li>“نوفر 90% من الماء” بدون قياس وتشغيل موثق.</li><li>“أول/أفضل/رقم 1” بدون دليل.</li><li>سعر 399 ريال باعتباره سعرًا جاريًا؛ هو ظاهر في screenshot مرجعي فقط.</li></ul>
+<hr>
+<h2>6. القنوات ودور كل قناة</h2>
+<div class="table-wrap"><table><thead><tr><th>القناة</th><th>دورها</th><th>نوع المحتوى</th><th>CTA الأساسي</th></tr></thead><tbody><tr><td>Instagram</td><td>الواجهة الأساسية والثقة البصرية</td><td>Reels، Before/After، Stories، Highlights، UGC</td><td>WhatsApp / Book</td></tr><tr><td>TikTok</td><td>الوصول والاكتشاف</td><td>Hooks سريعة، كارتكتر، satisfying cleaning، مواقف جدة</td><td>أرسل كلمة “موعد”</td></tr><tr><td>WhatsApp Business</td><td>الإغلاق وخدمة ما بعد البيع</td><td>ردود، كتالوج، مواعيد، تأكيد، تقييم، إعادة حجز</td><td>تأكيد الحجز</td></tr><tr><td>Google Business Profile</td><td>نية الشراء المحلية</td><td>صور، ساعات، خدمة، تقييمات، ردود</td><td>اتصل / الاتجاهات / WhatsApp</td></tr><tr><td>Snapchat</td><td>انتشار محلي ولقطات يومية</td><td>Stories من التشغيل وعروض محدودة</td><td>اسحب/تواصل</td></tr><tr><td>X</td><td>ليس قناة الأولوية</td><td>تحديثات، خدمة عملاء، مناسبات وطنية</td><td>الدعم والسمعة</td></tr><tr><td>LinkedIn</td><td>B2B</td><td>أساطيل، تقارير، خدمة للمكاتب</td><td>اطلب عرض شركات</td></tr><tr><td>Email/SMS</td><td>الاحتفاظ بعد موافقة العميل</td><td>تذكير، إعادة حجز، نقاط</td><td>احجز مرة أخرى</td></tr><tr><td>Paid Meta</td><td>تحويل وإعادة استهداف</td><td>فيديوهات proof، Lead/WhatsApp campaigns</td><td>بدء محادثة</td></tr><tr><td>TikTok Ads</td><td>توسيع reach</td><td>أفضل Reels العضوية</td><td>أرسل موقعك</td></tr></tbody></table></div>
+<h3>ترتيب الأولوية</h3>
+<p class="numbered">1. Instagram + WhatsApp.</p>
+<p class="numbered">2. TikTok.</p>
+<p class="numbered">3. Google Business Profile.</p>
+<p class="numbered">4. Snapchat حسب القدرة على إنتاج يومي.</p>
+<p class="numbered">5. LinkedIn للشركات فقط.</p>
+<hr>
+<h2>7. نظام المحتوى</h2>
+<h3>7.1 أعمدة المحتوى</h3>
+<div class="table-wrap"><table><thead><tr><th>العمود</th><th>النسبة</th><th>أمثلة</th></tr></thead><tbody><tr><td>Proof / إثبات النتيجة</td><td>30%</td><td>قبل/بعد، فحص، close-up، شهادة</td></tr><tr><td>Convenience / الراحة</td><td>20%</td><td>عند البيت، المكتب، الخريطة، الوقت</td></tr><tr><td>Care / العناية</td><td>15%</td><td>أدوات، مواد، أخطاء شائعة، حماية الطلاء</td></tr><tr><td>Brand character</td><td>15%</td><td>الكارتكتر في مواقف جدة، motion graphics، stickers</td></tr><tr><td>Local Jeddah</td><td>10%</td><td>مناطق، حرارة، غبار، مواقف، مناسبات</td></tr><tr><td>Offer / تحويل</td><td>10%</td><td>باقة محدودة، Gift، إحالة، حجز</td></tr></tbody></table></div>
+<h3>7.2 شكل المحتوى</h3>
+<ul class="clean-list"><li>4 Reels أسبوعيًا.</li><li>2 Carousels أسبوعيًا.</li><li>Stories في 5–7 أيام أسبوعيًا.</li><li>1 جلسة تصوير تشغيلية أسبوعيًا على الأقل.</li><li>1 محتوى عميل/UGC أسبوعيًا في البداية، مع موافقة كتابية/إلكترونية.</li><li>1 Live أو Q&amp;A كل أسبوعين إذا توافر شخص مناسب للرد.</li></ul>
+<h3>7.3 مواصفات الفيديو</h3>
+<ul class="clean-list"><li>9:16، 1080×1920، 30fps، H.264.</li><li>أول ثانية: مشكلة أو حركة واضحة، لا Logo طويل.</li><li>مدة أساسية: 12–25 ثانية، مع نسخ 6–10 ثوانٍ للإعلانات.</li><li>Arabic first، مع English utility labels عند الحاجة.</li><li>لا نعتمد على AI في توليد النص العربي أو الشعار؛ النص واللوجو يضافان في CapCut.</li><li>الكارتكتر يظهر كعنصر هوية، لا كبديل عن لقطات الخدمة الحقيقية.</li></ul>
+<hr>
+<h2>8. الخطة الزمنية الأسبوعية</h2>
+<h2>الأسبوع 1 — 17 إلى 23 أغسطس: “إحنا مين؟”</h2>
+<p><strong>الهدف:</strong> تثبيت الهوية وفتح أول محادثات بدون ضغط بيع.</p>
+<div class="table-wrap"><table><thead><tr><th>اليوم</th><th>المحتوى</th><th>التنفيذ</th></tr></thead><tbody><tr><td>الأحد</td><td>Reel launch</td><td>الكارتكتر + “سيارتك تحتاج عناية؟ لا تروح… إحنا نجيك”</td></tr><tr><td>الاثنين</td><td>Stories</td><td>استطلاع: أكثر شيء يضايقك؟ الانتظار / الجودة / الموعد / السعر</td></tr><tr><td>الثلاثاء</td><td>Carousel</td><td>4 أسباب تجعل الغسيل المتنقل أفضل ليوم العمل</td></tr><tr><td>الأربعاء</td><td>Reel app UI</td><td>عرض رحلة الحجز من الشاشة إلى اختيار الموقع، مع <code>UI reference</code> واضح</td></tr><tr><td>الخميس</td><td>Reel proof</td><td>لقطة أدوات/تحضير بدون ادعاءات غير معتمدة</td></tr><tr><td>الجمعة</td><td>Stories/Q&amp;A</td><td>اسأل عن السيارة، المنطقة، نوع الخدمة</td></tr><tr><td>السبت</td><td>Reel mascot</td><td>الكارتكتر يحاول الذهاب للمغسلة ثم يكتشف أن “المغسلة تجيك”</td></tr></tbody></table></div>
+<p><strong>CTA الأسبوع:</strong> أرسل كلمة <strong>“موعد”</strong> على WhatsApp.  </p>
+<p><strong>مخرج الأسبوع:</strong> 10–15 محادثة مؤهلة على الأقل كخط أساس اختبار، وليس وعدًا.</p>
+<h2>الأسبوع 2 — 24 إلى 30 أغسطس: “احجز بدون تعقيد”</h2>
+<p><strong>الهدف:</strong> شرح تجربة الحجز وزيادة الرسائل.</p>
+<div class="table-wrap"><table><thead><tr><th>المحتوى</th><th>الفكرة</th></tr></thead><tbody><tr><td>Reel 1</td><td>5 خطوات للحجز: خدمة → منطقة → موعد → سيارة → موقع</td></tr><tr><td>Reel 2</td><td>“أنت في المكتب؟ سيارتك لا تحتاج تنتظر معك”</td></tr><tr><td>Reel 3</td><td>Book for me vs Gift this service</td></tr><tr><td>Reel 4</td><td>اختيار موقع جدة وخريطة الوصول</td></tr><tr><td>Carousel 1</td><td>ماذا نحتاج منك قبل وصول الفريق؟</td></tr><tr><td>Carousel 2</td><td>الأسئلة الخمسة التي تسألها قبل اختيار مغسلة متنقلة</td></tr><tr><td>Stories</td><td>Slots المتاحة، صندوق أسئلة، كويز عن العناية</td></tr></tbody></table></div>
+<p><strong>مناسبة تشغيلية:</strong> بداية العام الدراسي تظهر في تقاويم غير رسمية حول 23 أغسطس؛ استخدم زاوية “رجوع الروتين/المكتب” فقط بعد تأكيد التاريخ محليًا، ولا تقدم التاريخ كعطلة رسمية.</p>
+<h2>الأسبوع 3 — 31 أغسطس إلى 6 سبتمبر: “النتيجة تُرى”</h2>
+<p><strong>الهدف:</strong> بناء proof library.</p>
+<ul class="clean-list"><li>تصوير 3 سيارات مختلفة: صغيرة، SUV، وفاخرة — بشرط موافقة أصحابها.</li><li>نفس زاوية التصوير قبل/بعد.</li><li>Reel “نفس السيارة، نفس الإضاءة، فرق حقيقي”.</li><li>Carousel: checklist التسليم.</li><li>Stories: time-lapse قصير مع إخفاء بيانات العميل.</li><li>دعوة لأوائل العملاء: <strong>أرسل تقييمك وخذ ميزة إعادة حجز <code>PENDING</code>.</strong></li></ul>
+<p><strong>ممنوع:</strong> نشر تقييمات أو صور بدون موافقة، أو استخدام قبل/بعد مضلل بالإضاءة.</p>
+<h2>الأسبوع 4 — 7 إلى 13 سبتمبر: “عناية السيارات الفاخرة”</h2>
+<p><strong>الهدف:</strong> رفع متوسط قيمة الطلب بدون إغراق بالسعر.</p>
+<ul class="clean-list"><li>Reel: الفرق بين غسيل سريع وعناية تحافظ على التفاصيل.</li><li>Reel: مواد/فرش/مايكروفايبر — لا نذكر أسماء أو claims غير موثقة.</li><li>Reel: “3 أخطاء تبهت سيارتك في جدة”.</li><li>Carousel: أسئلة العميل قبل اختيار Premium care.</li><li>Story highlight: <strong>Care / العناية</strong>.</li><li>عرض اختبار Premium لمدة 7 أيام <code>PENDING</code>: ميزة إضافية بدل خصم عميق.</li></ul>
+<h2>الأسبوع 5 — 14 إلى 20 سبتمبر: “نجهز للعيد الوطني”</h2>
+<p><strong>الهدف:</strong> حجز مسبق، Gift، وصورة وطنية بدون تقليد الهوية الرسمية.</p>
+<ul class="clean-list"><li>إطلاق قائمة انتظار/حجز مسبق للأسبوع الوطني.</li><li>Reel: تجهيز السيارة للمشاوير والاحتفالات.</li><li>Reel mascot: الكارتكتر يجهز الكاب/الخرطوم/الأدوات، بدون إعادة رسم الهوية الرسمية.</li><li>Carousel: قبل الزحمة احجز نافذتك.</li><li>Gift content: هدية عناية لوالد/صديق.</li><li>تحديث Highlights: National / Gift / Booking.</li></ul>
+<p><strong>ملاحظة:</strong> يوم التأسيس ليس داخل هذه الفترة؛ لا نستخدمه في الحملة. يوم العلم السعودي في مارس وليس ضمن الشهرين.</p>
+<h2>الأسبوع 6 — 21 إلى 27 سبتمبر: “National Day + Jeddah pride”</h2>
+<p><strong>الهدف:</strong> استغلال أعلى لحظة اهتمام مع احترام الهوية الوطنية.</p>
+<h3>التواريخ</h3>
+<ul class="clean-list"><li><strong>23 سبتمبر 2026:</strong> اليوم الوطني السعودي، التاريخ الرسمي السنوي.</li><li><strong>27 سبتمبر:</strong> اليوم العالمي للسياحة؛ يمكن ربطه بجدة والواجهة البحرية، لا باعتباره عطلة سعودية.</li></ul>
+<h3>المحتوى</h3>
+<ul class="clean-list"><li>21 سبتمبر: Reel “سيارتك جاهزة لمشاوير جدة”.</li><li>22 سبتمبر: Reminder + slots واضحة.</li><li>23 سبتمبر: منشور تهنئة أصلي يحترم المناسبة، بدون نسخ الهوية الرسمية أو شعار الحملة الحكومية.</li><li>24 سبتمبر: UGC/صور العملاء بإذنهم.</li><li>25–27 سبتمبر: “جدة تنشاف أنظف” — لقطات قيادة/كورنيش/مواقف بدون تصوير لوحات أو أشخاص دون إذن.</li></ul>
+<p><strong>العرض:</strong> حزمة وطنية <code>PENDING</code> بمدة وشروط واضحة، لا “خصم مفتوح”.</p>
+<h2>الأسبوع 7 — 28 سبتمبر إلى 4 أكتوبر: “الناس تتكلم”</h2>
+<p><strong>الهدف:</strong> تحويل الإثبات الاجتماعي إلى حجوزات.</p>
+<ul class="clean-list"><li>3 فيديوهات Testimonial قصيرة.</li><li>Carousel: أسئلة وأجوبة من أول العملاء.</li><li>Reel: ماذا يحدث بعد الضغط على Confirm Booking؟</li><li>Story: إعادة نشر تقييمات، مع إخفاء البيانات.</li><li>حملة Referral <code>PENDING</code>: كود إحالة مرتبط بحجز مكتمل فقط.</li></ul>
+<h2>الأسبوع 8 — 5 إلى 11 أكتوبر: “عضوية بدون مخاطرة”</h2>
+<p><strong>الهدف:</strong> اختبار الاحتفاظ وليس إطلاق اشتراك واسع.</p>
+<ul class="clean-list"><li>فتح قائمة انتظار لعضوية جدة.</li><li>Reel: لمن تصلح العضوية؟</li><li>Carousel: باقة مرة واحدة مقابل إعادة حجز مقابل عضوية.</li><li>Stories: تصويت على عدد الغسلات المناسب.</li><li>منشور B2B تجريبي للشركات والمكاتب.</li><li>تقرير 60 يومًا: أفضل رسالة، أفضل منطقة، أفضل نوع سيارة، وسبب إلغاء الحجز.</li></ul>
+<p><strong>قرار نهاية الأسبوع:</strong> إطلاق العضوية فقط إذا ظهرت إعادة حجز وقدرة تشغيلية، وإلا تستمر التجربة كـwaitlist.</p>
+<hr>
+<h2>9. تقويم المناسبات والأحداث خلال 3 أشهر</h2>
+<p><strong>الفترة المرجعية:</strong> 13 أغسطس – 13 نوفمبر 2026.  </p>
+<p><strong>الأحداث أدناه ليست كلها عطلات رسمية؛ فرّق بين “مناسبة تسويقية” و“إجازة”.</strong></p>
+<div class="table-wrap"><table><thead><tr><th>التاريخ</th><th>المناسبة/الحدث</th><th>درجة اليقين</th><th>الاستخدام التسويقي</th></tr></thead><tbody><tr><td>13 أغسطس</td><td>بداية موسم 2026–27 للدوري السعودي بحسب نتائج البحث الرسمية/المنقولة</td><td>متوسط إلى مرتفع</td><td>محتوى “غسيل قبل المباراة” ووقت انتظار المباراة؛ لا تستخدم شعارات الأندية بدون إذن</td></tr><tr><td>19 أغسطس – 14 سبتمبر</td><td>كرنفال عنيزة الدولي للتمور، خارج جدة</td><td>مؤكد على Visit Saudi</td><td>ليس حملة جدة أساسية؛ يمكن استخدام زاوية “موسم العودة والرحلات” فقط</td></tr><tr><td>23 أغسطس تقريبًا</td><td>بداية العام الدراسي 1448 بحسب تقاويم تعليمية غير رسمية</td><td>يحتاج تأكيد</td><td>“رجوع الروتين/الدوام” وليس “عطلة” أو تاريخًا رسميًا قبل تأكيد MOE</td></tr><tr><td>23 سبتمبر</td><td>اليوم الوطني السعودي 96</td><td>مؤكد كتاريخ سنوي</td><td>أكبر حملة: حجز مبكر، تهنئة، Gift، وتجهيز السيارة</td></tr><tr><td>27 سبتمبر</td><td>اليوم العالمي للسياحة</td><td>مؤكد أمميًا، ليس عطلة سعودية</td><td>جدة، البحر الأحمر، الرحلات القصيرة، وتجهيز السيارة</td></tr><tr><td>30 سبتمبر – 9 أكتوبر</td><td>Saudi International Falcons &amp; Hunting Exhibition في الرياض</td><td>مؤكد على Visit Saudi</td><td>مراقبة وطنية فقط؛ لا نشتري حملة جدة على حدث خارج المدينة</td></tr><tr><td>5 أكتوبر</td><td>World Teachers’ Day</td><td>مناسبة دولية</td><td>Gift للمعلم/المعلمة فقط إذا كان العرض والامتثال جاهزين</td></tr><tr><td>22 أكتوبر</td><td>فعالية FEENA NEHKE في جدة وفق Visit Saudi</td><td>مؤكد في التقويم وقت البحث</td><td>نافذة “قبل الخروجة/بعدها” ضمن شهر ثالث، وليس داخل أول 60 يومًا</td></tr><tr><td>أكتوبر–نوفمبر</td><td>بداية موسم جدة/الفعاليات الشتوية</td><td>متغير</td><td>راقب Visit Saudi أسبوعيًا ولا تبنِ عرضًا قبل تثبيت الحدث</td></tr></tbody></table></div>
+<h3>قواعد المناسبات</h3>
+<ul class="clean-list"><li>لا تستخدم شعار اليوم الوطني الرسمي أو عناصر هويته كأنها ملك للبراند.</li><li>لا تنسب حدثًا إلى جدة إذا كان في الرياض أو مدينة أخرى.</li><li>تحقق من كل فعالية قبل 7 أيام من النشر؛ تقاويم الفعاليات تتغير.</li><li>لا تربط خصمًا بمناسبة إلا بمدة وشروط وسعر قبل/بعد معتمدين.</li></ul>
+<hr>
+<h2>10. العروض والباقات</h2>
+<h3>10.1 هيكل العرض المقترح</h3>
+<div class="table-wrap"><table><thead><tr><th>العرض</th><th>دوره</th><th>الحالة</th></tr></thead><tbody><tr><td>First booking benefit</td><td>إزالة تردد أول تجربة</td><td><code>PENDING</code> — لا نعتمد نسبة قبل معرفة الهامش</td></tr><tr><td>Premium finish add-on</td><td>زيادة قيمة الطلب</td><td><code>PENDING</code></td></tr><tr><td>Gift service</td><td>اكتساب من عميل لعميل</td><td>جاهز كمفهوم، السعر والشروط <code>PENDING</code></td></tr><tr><td>Referral</td><td>اكتساب منخفض التكلفة</td><td><code>PENDING</code> — يمنح بعد حجز مكتمل</td></tr><tr><td>Office/Building day</td><td>تجميع الطلبات وتقليل تكلفة الانتقال</td><td><code>PENDING</code></td></tr><tr><td>National Day window</td><td>ذروة موسمية</td><td><code>PENDING</code>، بكمية/مواعيد محدودة</td></tr><tr><td>Membership waitlist</td><td>قياس الطلب المتكرر</td><td>ينفذ كقائمة انتظار أولًا</td></tr></tbody></table></div>
+<h3>10.2 قواعد التسعير</h3>
+<p>قبل نشر أي سعر، سجل:</p>
+<ul class="clean-list"><li>اسم الباقة.</li><li>نوع السيارة وحجمها.</li><li>داخلي/خارجي/تفاصيل إضافية.</li><li>المدة المتوقعة.</li><li>رسوم الوصول أو المنطقة إن وجدت.</li><li>VAT/الرسوم إن وجدت.</li><li>السعر قبل وبعد إن كان عرضًا.</li><li>بداية ونهاية العرض.</li><li>عدد الحجوزات/الأوقات المتاحة.</li><li>سياسة الإلغاء وإعادة الجدولة.</li></ul>
+<h3>10.3 لا نكرر أخطاء السوق</h3>
+<ul class="clean-list"><li>لا نستخدم “لامحدود” قبل معرفة الطاقة والتكلفة.</li><li>لا نستخدم “أقل سعر” أمام NIXT وغسلها.</li><li>لا نقارن سعر خدمة مختلفة بسعر غسيل خارجي فقط.</li><li>لا نبيع عضوية قبل وجود سجل إعادة حجز.</li></ul>
+<hr>
+<h2>11. الحملات المدفوعة</h2>
+<h3>11.1 هيكل الحملات</h3>
+<h4>Campaign A — Reach / Video views</h4>
+<ul class="clean-list"><li>الهدف: تعليم السوق بالبراند والكارتكتر والرسالة.</li><li>الجمهور: جدة، اهتمامات سيارات/عناية/مكاتب/فخامة، مع broad test.</li><li>المواد: 3 فيديوهات مختلفة hook.</li><li>لا نحكم من المشاهدات فقط؛ نراقب hold rate وprofile visits.</li></ul>
+<h4>Campaign B — WhatsApp conversations</h4>
+<ul class="clean-list"><li>الهدف: بدء محادثة مؤهلة.</li><li>المواد: قبل/بعد، تجربة الحجز، موعد واضح.</li><li>أسئلة التأهيل: المنطقة، نوع السيارة، الخدمة، اليوم/الوقت.</li><li>لا نرسل العميل لفورم طويل إذا كان WhatsApp أسرع.</li></ul>
+<h4>Campaign C — Retargeting</h4>
+<ul class="clean-list"><li>الجمهور: شاهد 50% من الفيديو، زار الحساب، تفاعل، بدأ محادثة ولم يحجز.</li><li>الرسالة: proof + availability + answer to objection.</li><li>لا نعيد نفس إعلان الخصم للمستخدم أسبوعين متتاليين.</li></ul>
+<h4>Campaign D — Local intent</h4>
+<ul class="clean-list"><li>Google Business / Search عند اعتماد الموقع والاتصال والتغطية.</li><li>كلمات اختبارية: غسيل سيارات متنقل جدة، غسيل عند البيت جدة، تلميع سيارات متنقل جدة.</li><li>نراقب مكالمات ورسائل فعلية، لا clicks فقط.</li></ul>
+<h3>11.2 ميزانيات اختبارية لـ60 يومًا</h3>
+<div class="table-wrap"><table><thead><tr><th>المستوى</th><th>إجمالي 60 يومًا</th><th>Paid media</th><th>Production</th><th>Creators/UGC</th><th>Tools/tracking</th><th>احتياطي</th></tr></thead><tbody><tr><td>Lean</td><td>6,000 SAR</td><td>3,300</td><td>1,200</td><td>900</td><td>300</td><td>300</td></tr><tr><td>Core recommended</td><td>12,000 SAR</td><td>6,600</td><td>2,400</td><td>1,800</td><td>600</td><td>600</td></tr><tr><td>Aggressive</td><td>24,000 SAR</td><td>13,200</td><td>4,800</td><td>3,600</td><td>1,200</td><td>1,200</td></tr></tbody></table></div>
+<p><strong>التوصية:</strong> ابدأ بمستوى Core فقط بعد اعتماد الجاهزية التشغيلية. لا تنفق على الوصول قبل وجود رد سريع، جدول حجز، ونطاق خدمة واضح.</p>
+<h3>11.3 توزيع paid media في المستوى Core</h3>
+<ul class="clean-list"><li>35% Video/Reach.</li><li>40% WhatsApp/Lead conversion.</li><li>15% Retargeting.</li><li>10% Google/local intent.</li></ul>
+<p>بعد أول 14 يومًا، أوقف أي مجموعة لا تصل إلى الحد الأدنى الذي يحدده الهامش، وانقل الميزانية للحملة التي تنتج <strong>حجوزات مكتملة</strong> لا رسائل فقط.</p>
+<hr>
+<h2>12. خطة المؤثرين وUGC</h2>
+<h3>12.1 بدل مؤثر واحد كبير</h3>
+<p>اختبر 6–10 micro-creators محليين:</p>
+<ul class="clean-list"><li>سيارات وتفاصيل.</li><li>lifestyle في جدة.</li><li>عائلات/أمهات.</li><li>مكاتب وأعمال.</li><li>صناع محتوى أحياء/تجارب محلية.</li></ul>
+<h3>12.2 Brief المؤثر</h3>
+<p>يستلم:</p>
+<ul class="clean-list"><li>خدمة معتمدة واحدة.</li><li>نقاط يجب قولها: mobile، موعد، نتيجة، منطقة فقط إذا مؤكدة.</li><li>نقاط ممنوعة: أفضل/أرخص/رقم 1، أسعار غير معتمدة، ادعاءات بيئية، تصوير لوحات أو أشخاص بلا موافقة.</li><li>التسليم: Reel + 3 Stories + رابط/كود تتبع.</li><li>الإفصاح عن المحتوى المدفوع حسب القواعد المناسبة.</li></ul>
+<h3>12.3 قياس المؤثر</h3>
+<p>كل مؤثر له:</p>
+<ul class="clean-list"><li>كود مختلف.</li><li>رابط UTM مختلف.</li><li>عدد رسائل.</li><li>حجوزات مكتملة.</li><li>تكلفة الحجز.</li><li>جودة المحتوى وإمكانية إعادة استخدامه.</li></ul>
+<hr>
+<h2>13. WhatsApp وCRM</h2>
+<h3>13.1 رسالة الترحيب</h3>
+<blockquote>أهلًا بك في Saudi Mark 👋  </blockquote>
+<blockquote>نوصلك في جدة ونعتني بسيارتك عند موقعك.  </blockquote>
+<blockquote>ارسل لنا: <strong>الحي + نوع السيارة + الخدمة المطلوبة + الوقت المناسب</strong>، ونرد عليك بالتوفر والتفاصيل المعتمدة.</blockquote>
+<h3>13.2 أسئلة التأهيل</h3>
+<p class="numbered">1. في أي حي داخل جدة؟</p>
+<p class="numbered">2. نوع السيارة وحجمها؟</p>
+<p class="numbered">3. خارجي، داخلي، Premium، أو تلميع؟</p>
+<p class="numbered">4. المنزل أم المكتب؟</p>
+<p class="numbered">5. اليوم/النافذة المناسبة؟</p>
+<p class="numbered">6. هل الحجز لك أم هدية؟</p>
+<h3>13.3 مراحل CRM</h3>
+<ul class="clean-list"><li>New lead.</li><li>Qualified.</li><li>Quote/availability sent.</li><li>Awaiting confirmation.</li><li>Booked.</li><li>Technician assigned.</li><li>Arrived.</li><li>Completed.</li><li>Review requested.</li><li>Rebooking due.</li><li>Lost reason.</li></ul>
+<h3>13.4 رسائل المتابعة</h3>
+<ul class="clean-list"><li>بعد 15–30 دقيقة: “هل تريد أن نتحقق لك من أقرب نافذة متاحة؟”.</li><li>بعد 24 ساعة: “ما زال بإمكاننا مساعدتك إذا أرسلت الحي ونوع السيارة.”</li><li>بعد الخدمة: طلب تقييم + صورة قبل/بعد بموافقة.</li><li>بعد 21–30 يومًا: “جاهز للعناية التالية؟ نتحقق لك من المواعيد.”</li></ul>
+<p>لا نرسل رسائل جماعية تسويقية إلا بموافقة وقناة إلغاء واضحة.</p>
+<hr>
+<h2>14. التشغيل الذي يجب أن يسبق التسويق</h2>
+<p>لا تبدأ حملة كبيرة قبل توفر:</p>
+<ul class="clean-list"><li>منطقة/مناطق جدة المعتمدة.</li><li>أيام وساعات الخدمة.</li><li>عدد الفرق/الفنيين.</li><li>زمن الخدمة الحقيقي.</li><li>سياسة الطقس/المواقف/المياه/الكهرباء.</li><li>سياسة التأخير وعدم الحضور.</li><li>طرق الدفع.</li><li>خدمة العملاء وبديل التصعيد.</li><li>صور حقيقية مسموح باستخدامها.</li><li>قائمة الأسعار المعتمدة.</li><li>صفحة Google Business أو نقطة اتصال رسمية.</li></ul>
+<h3>SLA محتوى يجب إثباته</h3>
+<ul class="clean-list"><li>تأكيد الحجز.</li><li>Reminder قبل الوصول.</li><li>نافذة الوصول.</li><li>رسالة عند الوصول.</li><li>صورة/معيار تسليم.</li><li>طلب تقييم.</li></ul>
+<p>لا نعلن “موعد واضح” إلا إذا كان النظام التشغيلي قادرًا على تسجيل الموعد والوصول الفعلي.</p>
+<hr>
+<h2>15. أسلوب الرد وإدارة المجتمع</h2>
+<h3>نبرة الرد</h3>
+<ul class="clean-list"><li>سعودي/عربي واضح، ودود، مختصر.</li><li>لا جدال مع العميل.</li><li>لا نلوم الفني أو العميل أمام الجمهور.</li><li>لا نعد بشيء خارج النظام.</li><li>نطلب التفاصيل في الخاص مع إبقاء الرد العام مهنيًا.</li></ul>
+<h3>رد عام على شكوى تأخير</h3>
+<blockquote>نعتذر عن التجربة غير المرضية. أرسل لنا رقم الحجز أو الخاص، وسنراجع الموعد والوصول معك ونرجع لك بحل واضح.</blockquote>
+<h3>رد على “كم السعر؟”</h3>
+<blockquote>السعر يعتمد على نوع السيارة والخدمة والحي. أرسل لنا نوع السيارة والحي، ونشاركك السعر والتوفر المعتمدين قبل الحجز.</blockquote>
+<h3>تصنيف الشكاوى</h3>
+<ul class="clean-list"><li>تأخير.</li><li>عدم حضور.</li><li>جودة النتيجة.</li><li>ضرر/خدش.</li><li>السعر/الرسوم.</li><li>صعوبة الحجز.</li><li>سلوك الفني.</li><li>مشكلة الدفع.</li></ul>
+<p>كل شكوى لها owner ووقت إغلاق، ولا تختفي داخل الرسائل.</p>
+<hr>
+<h2>16. القياس والتتبع</h2>
+<h3>16.1 Tracking setup</h3>
+<ul class="clean-list"><li>WhatsApp Business labels.</li><li>UTM لكل منصة وحملة ومؤثر.</li><li>كود لكل عرض/مؤثر.</li><li>جدول يومي للحجوزات.</li><li>مصدر lead إلزامي.</li><li>سبب خسارة lead.</li><li>وقت أول رد.</li><li>وقت الوصول الفعلي.</li><li>قيمة الطلب.</li><li>إعادة الحجز.</li></ul>
+<h3>16.2 لوحة المؤشرات الأسبوعية</h3>
+<div class="table-wrap"><table><thead><tr><th>المؤشر</th><th>التعريف</th></tr></thead><tbody><tr><td>Reach</td><td>عدد الأشخاص الذين وصل إليهم المحتوى</td></tr><tr><td>3-second view rate</td><td>هل hook يعمل؟</td></tr><tr><td>Hold rate</td><td>نسبة من أكملوا نصف الفيديو أو أكثر</td></tr><tr><td>Saves/Shares</td><td>قيمة المحتوى خارج المشاهدة اللحظية</td></tr><tr><td>Profile visit rate</td><td>اهتمام بالعلامة</td></tr><tr><td>WhatsApp conversations</td><td>نية فعلية</td></tr><tr><td>Qualified leads</td><td>رسائل فيها منطقة/سيارة/خدمة/وقت</td></tr><tr><td>Booked</td><td>حجز مؤكد</td></tr><tr><td>Completed</td><td>خدمة نفذت فعليًا</td></tr><tr><td>CAC</td><td>الإنفاق ÷ العملاء المكتملين</td></tr><tr><td>Average order value</td><td>متوسط قيمة الطلب</td></tr><tr><td>Rebooking rate</td><td>إعادة حجز خلال فترة محددة</td></tr><tr><td>No-show/cancel rate</td><td>ضغط التشغيل والثقة</td></tr><tr><td>Response time</td><td>سرعة الإغلاق</td></tr><tr><td>Rating/review velocity</td><td>معدل التقييمات الجديدة</td></tr></tbody></table></div>
+<h3>16.3 قرارات أسبوعية</h3>
+<ul class="clean-list"><li>أفضل hook.</li><li>أفضل منطقة.</li><li>أفضل نوع سيارة.</li><li>أفضل وقت نشر.</li><li>أفضل مصدر حجز.</li><li>أكثر اعتراض متكرر.</li><li>أكثر سبب فقدان lead.</li><li>هل النتيجة التشغيلية تطابق الوعد؟</li></ul>
+<hr>
+<h2>17. أبحاث وتجارب يجب تنفيذها</h2>
+<h3>Test 1 — الرسالة</h3>
+<ul class="clean-list"><li>A: الراحة — “مشوار المغسلة أخذ من يومك؟”</li><li>B: الجودة — “سيارتك الفاخرة تستحق عناية مختلفة.”</li><li>C: الاعتمادية — “موعد واضح. عناية توصل لموقعك.”</li></ul>
+<h3>Test 2 — CTA</h3>
+<ul class="clean-list"><li>أرسل موقعك.</li><li>احجز نافذتك.</li><li>اسأل عن الباقة.</li><li>أرسلها كهدية.</li></ul>
+<h3>Test 3 — نوع proof</h3>
+<ul class="clean-list"><li>Before/After.</li><li>فيديو الفني/الأدوات.</li><li>Screenshot رحلة الحجز.</li><li>Testimonial عميل.</li></ul>
+<h3>Test 4 — العرض</h3>
+<ul class="clean-list"><li>ميزة إضافية.</li><li>Gift.</li><li>Referral.</li><li>حجز مجموعة في مكتب/مبنى.</li></ul>
+<p>لا نغيّر الرسالة والسعر والجمهور في نفس الاختبار؛ غيّر متغيرًا واحدًا قدر الإمكان.</p>
+<hr>
+<h2>18. قائمة الإنتاج الأسبوعية</h2>
+<h3>قبل التصوير</h3>
+<ul class="clean-list"><li>اعتماد الخدمة والسعر/الـ<code>PENDING</code>.</li><li>تجهيز سيارة وموافقة صاحبها.</li><li>تنظيف العدسات/الإضاءة.</li><li>تثبيت مكان تصوير قبل/بعد.</li><li>منع ظهور لوحات أو بيانات.</li><li>إعداد shot list.</li></ul>
+<h3>أثناء التصوير</h3>
+<ul class="clean-list"><li>Wide location.</li><li>Close-up dirt/detail.</li><li>أدوات آمنة.</li><li>حركة hands-on.</li><li>Before/After بنفس الزاوية.</li><li>وصول الفريق.</li><li>تسليم السيارة.</li><li>reaction/testimonial.</li><li>لقطة كارتكتر أو motion overlay.</li></ul>
+<h3>بعد التصوير</h3>
+<ul class="clean-list"><li>4 نسخ Hook.</li><li>Arabic captions.</li><li>نسخة بدون نص للتعديل.</li><li>Cover موحد.</li><li>CTA واضح.</li><li>Subtitles.</li><li>مراجعة claims.</li><li>Export 9:16.</li><li>Naming: <code>YYYYMMDD_platform_campaign_asset_v01</code>.</li></ul>
+<hr>
+<h2>19. خطة الأيام السبعة الأولى</h2>
+<h3>اليوم 1</h3>
+<ul class="clean-list"><li>اعتماد نطاق جدة وأيام الخدمة.</li><li>اعتماد الباقات والأسعار أو إبقاؤها <code>PENDING</code>.</li><li>تجهيز WhatsApp Business labels.</li><li>تثبيت bio وCTA.</li></ul>
+<h3>اليوم 2</h3>
+<ul class="clean-list"><li>تصوير سيارة proof.</li><li>تصوير الكارتكتر/أصل الهوية للاستخدام في motion.</li><li>إعداد Highlights: Book / Care / Areas / Reviews / Gift.</li></ul>
+<h3>اليوم 3</h3>
+<ul class="clean-list"><li>نشر Reel launch.</li><li>تشغيل Stories poll.</li><li>بدء سجل leads.</li></ul>
+<h3>اليوم 4</h3>
+<ul class="clean-list"><li>نشر Carousel الحجز.</li><li>اختبار رد WhatsApp يدويًا.</li><li>إعداد Google Business إذا كانت البيانات الرسمية جاهزة.</li></ul>
+<h3>اليوم 5</h3>
+<ul class="clean-list"><li>تصوير/مونتاج Before/After.</li><li>اعتماد سياسة موافقات UGC.</li></ul>
+<h3>اليوم 6</h3>
+<ul class="clean-list"><li>نشر Reel proof.</li><li>بدء إعلان صغير لمدة 72 ساعة على أفضل hook.</li></ul>
+<h3>اليوم 7</h3>
+<ul class="clean-list"><li>تقرير سريع: reach، watch rate، messages، qualified leads، booked، blockers.</li><li>لا نضاعف الميزانية قبل قراءة النتيجة التشغيلية.</li></ul>
+<hr>
+<h2>20. الميزانية التشغيلية المطلوب اعتمادها</h2>
+<p>القيم التالية سيناريوهات وليست التزامًا:</p>
+<div class="table-wrap"><table><thead><tr><th>البند</th><th>Lean</th><th>Core</th><th>Aggressive</th></tr></thead><tbody><tr><td>إعلانات</td><td>3,300</td><td>6,600</td><td>13,200</td></tr><tr><td>إنتاج/تصوير/مونتاج</td><td>1,200</td><td>2,400</td><td>4,800</td></tr><tr><td>Creators/UGC</td><td>900</td><td>1,800</td><td>3,600</td></tr><tr><td>أدوات/تتبع</td><td>300</td><td>600</td><td>1,200</td></tr><tr><td>احتياطي</td><td>300</td><td>600</td><td>1,200</td></tr><tr><td><strong>الإجمالي</strong></td><td><strong>6,000</strong></td><td><strong>12,000</strong></td><td><strong>24,000</strong></td></tr></tbody></table></div>
+<p>الأرقام بالريال السعودي وعلى مدى 60 يومًا. لا تشمل تكلفة التشغيل الفعلية، المواد، التنقل، رواتب الفريق، أو تكلفة الهدايا ما لم يعتمد ذلك.</p>
+<hr>
+<h2>21. المخاطر والضوابط</h2>
+<div class="table-wrap"><table><thead><tr><th>الخطر</th><th>الوقاية</th></tr></thead><tbody><tr><td>وعد بموعد غير قابل للتنفيذ</td><td>لا تنشر SLA قبل اختبار الوصول الفعلي</td></tr><tr><td>حرب أسعار</td><td>اشرح الفرق وقلّل الخصم العميق</td></tr><tr><td>صور قبل/بعد مضللة</td><td>نفس الإضاءة/الزاوية وموافقة العميل</td></tr><tr><td>ادعاءات بيئية</td><td>استخدم أرقامًا مقاسة فقط</td></tr><tr><td>موسم/فعالية تتغير</td><td>تحقق قبل 7 أيام من Visit Saudi/مصدر رسمي</td></tr><tr><td>استخدام هوية اليوم الوطني</td><td>استخدم تهنئة أصلية ولا تقلّد الهوية الرسمية</td></tr><tr><td>نشر سعر غير معتمد</td><td>كل سعر في المحتوى يحتاج approval وstart/end</td></tr><tr><td>حسابات مزيفة/تعليقات سلبية</td><td>تحقق من الهوية، ورد بإجراء واضح</td></tr><tr><td>ضياع مصدر الـlead</td><td>UTM + WhatsApp labels + سؤال مصدر الحجز</td></tr><tr><td>التوسع قبل ثبات التشغيل</td><td>منطقة واحدة ثم توسيع تدريجي</td></tr></tbody></table></div>
+<hr>
+<h2>22. معايير Go / No-Go بعد 60 يومًا</h2>
+<h3>Go للتوسع</h3>
+<ul class="clean-list"><li>الوصول والنتيجة متسقان.</li><li>نسبة عدم الحضور/الإلغاء تحت حد تشغيلي مقبول.</li><li>وجود مكتبة proof حقيقية.</li><li>رد WhatsApp سريع.</li><li>وجود إعادة حجز وطلب عضوية.</li><li>تكلفة الحجز مفهومة مقابل الهامش.</li><li>منطقة جدة الأولى تعمل بدون ضغط.</li></ul>
+<h3>No-Go أو Pause</h3>
+<ul class="clean-list"><li>الإعلانات تنتج رسائل بلا حجوزات.</li><li>التأخير يكرر نفس شكوى السوق.</li><li>السعر غير معتمد أو الهامش غير معروف.</li><li>لا توجد صور حقيقية أو موافقات.</li><li>التغطية تتغير من عميل لآخر.</li><li>العضوية ستضغط التشغيل قبل معرفة الطاقة.</li></ul>
+<hr>
+<h2>23. المصادر والتواريخ</h2>
+<p class="numbered">1. <a href="../research/saudi-car-wash-competitive-report.md">Saudi Mark competitor report in repository</a> — تم التحقق من المنافسين والسوشيال في 13 أغسطس 2026.</p>
+<p class="numbered">2. <a href="../assets/brand/README.md">Saudi Mark brand character reference</a></p>
+<p class="numbered">3. <a href="../assets/app-ui/README.md">Saudi Mark application UI references</a></p>
+<p class="numbered">4. <a href="https://www.visitsaudi.com/en/saudi-calendar">Visit Saudi — Saudi Calendar</a> — تقويم فعاليات وأحداث، تم الاطلاع في 13 أغسطس 2026.</p>
+<p class="numbered">5. <a href="https://www.visitsaudi.com/en/saudi-calendar/saudi-national-day">Visit Saudi — Saudi National Day</a> — التاريخ السنوي 23 سبتمبر.</p>
+<p class="numbered">6. <a href="https://www.visitsaudi.com/en/seasons/jeddah-season">Visit Saudi — Jeddah Season</a> — دليل موسم جدة والفعاليات، مع ضرورة إعادة التحقق قبل النشر.</p>
+<p class="numbered">7. <a href="https://www.visitsaudi.com/en/campaigns/winter">Visit Saudi — Winter events</a> — فعاليات جدة والرياض الظاهرة وقت البحث.</p>
+<p class="numbered">8. <a href="https://www.spl.com.sa/">Saudi Pro League</a> — أخبار ومواعيد الموسم الرسمي.</p>
+<p class="numbered">9. <a href="https://datareportal.com/reports/digital-2026-saudi-arabia">DataReportal — Digital 2026: Saudi Arabia</a> — مؤشرات وصول Instagram/TikTok الإعلاني، وليست تعداد مستخدمين فريدًا.</p>
+<p class="numbered">10. <a href="https://www.un.org/en/observances/tourism-day">UN — World Tourism Day</a> — 27 سبتمبر.</p>
+<p class="numbered">11. <a href="https://www.moe.gov.sa/ar/education/generaleducation/pages/academiccalendar.aspx">Ministry of Education — Academic Calendar</a> — مصدر رسمي للتقويم؛ صفحة البحث الحالية قد تعرض سنة سابقة، لذلك يجب تأكيد تاريخ 1448 قبل استخدامه كحقيقة.</p>
+<p class="numbered">12. <a href="https://www.voguearabia.com/article/saudi-national-day-2026-official-theme">Saudi National Day 2026 identity coverage</a> — مرجع إعلامي للهوية/الشعار؛ لا ننسخ الهوية الرسمية في أصول Saudi Mark.</p>
+<hr>
+<h2>24. بيانات لازالت PENDING من صاحب البراند</h2>
+<ul class="clean-list"><li>الاسم التجاري القانوني وبيانات التواصل العامة.</li><li>المناطق والأحياء الفعلية في جدة.</li><li>أيام وساعات التشغيل.</li><li>عدد الفرق والفنيين.</li><li>قائمة الخدمات النهائية.</li><li>الأسعار والـVAT ورسوم الوصول.</li><li>سياسة التأخير والإلغاء والتعويض.</li><li>طرق الدفع.</li><li>السعر الظاهر في UI: هل هو Live أم مرجع تصميم؟</li><li>صلاحية الهدايا: mug / sunshade / add-ons.</li><li>الميزانية النهائية.</li><li>هل الحسابات جاهزة أم تحتاج إنشاء/تحقق؟</li><li>رابط WhatsApp/Google Business/App live.</li><li>اعتماد استخدام صور العملاء والكارتكتر في الإعلانات المدفوعة.</li></ul>
+<p><strong>قرار الخطة:</strong> نبدأ بمحتوى وإثبات محلي، ثم نوسع الإعلان والاشتراك بعد ظهور بيانات حقيقية، وليس قبلها.</p>
+</section>
+<section class="asset-page content">
+  <h2>مرجع الهوية والتطبيق المستخدم في الخطة</h2>
+  <p class="asset-intro">الأصول التالية مملوكة/مقدمة من صاحب البراند، وتُستخدم كمرجع بصري للمحتوى، الإعلانات، العروض، وتجربة الحجز. الأسعار والأرقام الظاهرة في واجهات التطبيق ليست اعتمادًا إنتاجيًا.</p>
+  <div class="character-card"><img src="file:///home/ubuntu/projects/saudi-mark/assets/brand/saudi-mark-character-reference.jpg" alt="Saudi Mark character"><div><strong>كارتكتر Saudi Mark الرسمي</strong><p>قط أبيض ودود بكاب أزرق ونظارة حماية وشال أزرق وخرطوم أزرق/أصفر. يظهر في الـmotion والـStories والتغليف دون استبدال لقطات الخدمة الحقيقية.</p></div></div>
+  <h3>Application UI references</h3>
+  <div class="app-grid"><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/01-splash-screen.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>01 splash screen</figcaption></figure><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/02-booking-date-slot-vehicle.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>02 booking date slot vehicle</figcaption></figure><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/03-home-dashboard.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>03 home dashboard</figcaption></figure><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/04-booking-location-gifts.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>04 booking location gifts</figcaption></figure><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/05-booking-vehicle-location.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>05 booking vehicle location</figcaption></figure><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/06-booking-mode-service-zone.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>06 booking mode service zone</figcaption></figure></div>
+</section>
+</div>
+</body>
+</html>
