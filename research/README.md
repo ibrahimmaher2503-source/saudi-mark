@@ -8,6 +8,7 @@
 - `saudi-mark-content-ideas.md`: 15 فكرة أصلية وسلسلة محتوى.
 - `saudi-car-wash-competitive-report.md`: تقرير السوق والمنافسين في السعودية مع تركيز على جدة، ومصادر وروابط التحقق.
 - `../exports/saudi-car-wash-competitive-report.pdf`: نسخة PDF منسقة تشمل صفحات السوشيال ونقاط القوة والضعف.
+- `../marketing/saudi-mark-60-day-marketing-plan-ar.md`: خطة تسويق وسوشيال ميديا تنفيذية لمدة 60 يومًا، تشمل الجمهور، التموضع، المحتوى، المناسبات، الإعلانات، الميزانية، CRM، القياس، وبيانات `PENDING`.
 - `../prompts/omni/ready-video-prompts.md`: 10 Prompts جاهزة لتوليد فيديو clips عبر Flow/Gemini Omni.
 - `../prompts/capcut/ready-copy-and-sound.md`: نصوص عربية وتوقيتات ومؤثرات صوتية لـCapCut.
 
