@@ -47,8 +47,9 @@ The map was rasterized locally to a transparent PNG at 1600×1333 pixels.
 
 The owner-provided character is a friendly white cat mascot wearing the Saudi Mark blue cap, dark goggles, blue scarf, and carrying a blue/yellow water hose. It is the visual mascot reference for future Saudi Mark content, app visuals, social media, uniforms, and merchandise.
 
-## Usage notes
+## Application UI references
 
-- Keep the official logo separate from third-party assets.
+Owner-provided Saudi Mark application screenshots are stored in `assets/app-ui/` with a catalog in `assets/app-ui/README.md`. They are the reference for the app's dark navy/slate interface, booking flow, packages/subscriptions, memberships, rewards, gifts, vehicle profiles, and Jeddah service-zone selection.
+
 - Do not use generated or third-party text as the brand name.
 - Confirm the current license/source again before paid campaign publication if the project is distributed externally.
