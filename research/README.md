@@ -6,6 +6,7 @@
 
 - `video-reference-library.md`: روابط فيديوهات ومصادر مع ما يمكن تعلمه منها.
 - `saudi-mark-content-ideas.md`: 15 فكرة أصلية وسلسلة محتوى.
+- `saudi-car-wash-competitive-report.md`: تقرير السوق والمنافسين في السعودية مع تركيز على جدة، ومصادر وروابط التحقق.
 - `../prompts/omni/ready-video-prompts.md`: 10 Prompts جاهزة لتوليد فيديو clips عبر Flow/Gemini Omni.
 - `../prompts/capcut/ready-copy-and-sound.md`: نصوص عربية وتوقيتات ومؤثرات صوتية لـCapCut.
 
