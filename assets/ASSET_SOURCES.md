@@ -40,6 +40,13 @@ License text: https://creativecommons.org/licenses/by-sa/3.0/
 
 The map was rasterized locally to a transparent PNG at 1600×1333 pixels.
 
+- `assets/brand/saudi-mark-character-reference.jpg`: owner-provided reference for the Saudi Mark mascot/brand character.
+- `assets/brand/README.md`: character description and usage rules.
+
+## Brand character
+
+The owner-provided character is a friendly white cat mascot wearing the Saudi Mark blue cap, dark goggles, blue scarf, and carrying a blue/yellow water hose. It is the visual mascot reference for future Saudi Mark content, app visuals, social media, uniforms, and merchandise.
+
 ## Usage notes
 
 - Keep the official logo separate from third-party assets.
