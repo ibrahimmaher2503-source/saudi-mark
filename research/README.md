@@ -12,6 +12,10 @@
 - `../exports/saudi-mark-instagram-tiktok-plan-v2-ar.pdf`: PDF مستقل للنسخة v2.
 - `../exports/saudi-mark-instagram-tiktok-plan-v2-ar.html`: نسخة HTML القابلة للطباعة للنسخة v2.
 - `../marketing/render_saudi_mark_v2.py`: سكربت توليد PDF النسخة v2.
+- `../marketing/saudi-mark-ai-women-instagram-tiktok-plan-v3-ar.md`: نسخة v3 المعتمدة أكثر على AI Content، موجهة للسيدات في جدة، وبميزانية إعلانات 2,400 SAR.
+- `../exports/saudi-mark-ai-women-instagram-tiktok-plan-v3-ar.pdf`: PDF مستقل لخطة AI للسيدات.
+- `../exports/saudi-mark-ai-women-instagram-tiktok-plan-v3-ar.html`: نسخة HTML القابلة للطباعة لخطة v3.
+- `../marketing/render_saudi_mark_v3.py`: سكربت توليد HTML/PDF لخطة v3.
 - `../prompts/omni/ready-video-prompts.md`: 10 Prompts جاهزة لتوليد فيديو clips عبر Flow/Gemini Omni.
 - `../prompts/capcut/ready-copy-and-sound.md`: نصوص عربية وتوقيتات ومؤثرات صوتية لـCapCut.
 
