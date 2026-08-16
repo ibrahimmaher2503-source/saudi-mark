@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>Saudi Mark — خطة AI-Only للفيديوهات والصور v4</title>
+<style>
+@page { size:A4; margin:14mm 12mm 16mm; }
+:root { --ink:#152437; --muted:#647487; --line:#d7e1e8; --navy:#092a3b; --teal:#087f8c; --blue:#1261a0; --yellow:#f5b841; --soft:#f3f8fa; --paper:#fff; }
+* { box-sizing:border-box; }
+html,body { margin:0; padding:0; background:#e8eef2; color:var(--ink); font-family:"DejaVu Sans",Arial,sans-serif; direction:rtl; }
+body { font-size:9.4pt; line-height:1.68; }
+.page { max-width:210mm; margin:0 auto; background:var(--paper); }
+.cover { min-height:267mm; page-break-after:always; color:white; padding:27mm 22mm 18mm; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; background:linear-gradient(135deg,#071e2e 0%,#0b4258 53%,#087f8c 100%); }
+.cover:before { content:""; position:absolute; width:200mm; height:200mm; border:1px solid rgba(255,255,255,.13); border-radius:50%; left:-100mm; bottom:-96mm; }
+.cover:after { content:""; position:absolute; width:95mm; height:95mm; border:1px solid rgba(245,184,65,.38); border-radius:50%; right:-55mm; top:-38mm; }
+.cover .mark { position:relative; z-index:1; display:flex; align-items:center; gap:8mm; }
+.cover .mark img { width:28mm; height:28mm; object-fit:cover; border-radius:50%; border:2px solid rgba(255,255,255,.75); }
+.cover .eyebrow { position:relative; z-index:1; color:#ffd166; font-size:9pt; font-weight:bold; letter-spacing:.1em; }
+.cover h1 { position:relative; z-index:1; max-width:160mm; font-size:31pt; line-height:1.34; margin:14mm 0 6mm; }
+.cover .subtitle { position:relative; z-index:1; max-width:142mm; font-size:15pt; line-height:1.65; color:#e2f0f2; }
+.cover .positioning { position:relative; z-index:1; border-right:4px solid var(--yellow); padding:4mm 5mm; margin-top:10mm; max-width:150mm; background:rgba(255,255,255,.08); font-size:12pt; font-weight:bold; }
+.cover .meta { position:relative; z-index:1; border-top:1px solid rgba(255,255,255,.35); padding-top:7mm; display:grid; grid-template-columns:1fr 1fr; gap:5mm; color:#d8e9ed; }
+.cover .meta strong { display:block; color:white; font-size:10pt; }
+.cover .badge { display:inline-block; position:relative; z-index:1; background:var(--yellow); color:#152437; padding:1.8mm 4mm; border-radius:20px; margin-top:7mm; font-weight:bold; }
+.content { padding:0 2mm 10mm; }
+.plan-title { display:none; }
+h2 { margin:11mm 0 4mm; padding:2.7mm 4mm 2.2mm; border-right:4px solid var(--yellow); background:linear-gradient(90deg,#eef7f8,transparent); color:#08495d; font-size:16pt; line-height:1.4; page-break-after:avoid; }
+h3 { margin:6.5mm 0 2mm; color:var(--teal); font-size:12.2pt; page-break-after:avoid; }
+h4 { margin:4mm 0 1.5mm; color:var(--blue); font-size:10.8pt; page-break-after:avoid; }
+p { margin:0 0 2.8mm; }
+a { color:var(--teal); text-decoration:none; font-weight:600; }
+hr { border:0; border-top:1px solid var(--line); margin:6mm 0; }
+blockquote { margin:4mm 0; padding:3.5mm 4.5mm; background:#edf8f8; border-right:4px solid var(--teal); color:#134e61; font-size:11.5pt; font-weight:600; page-break-inside:avoid; }
+.clean-list { margin:1mm 0 3.5mm; padding:0 6mm 0 0; }
+.clean-list li { margin:1mm 0; padding-right:1mm; }
+.numbered { margin:1.3mm 0; }
+.table-wrap { width:100%; overflow:visible; margin:3mm 0 5mm; page-break-inside:auto; }
+table { width:100%; border-collapse:collapse; table-layout:fixed; font-size:7.15pt; line-height:1.4; direction:rtl; }
+th { background:#0b4258; color:white; padding:1.9mm 1.5mm; border:1px solid #083548; font-weight:bold; vertical-align:top; }
+td { padding:1.7mm 1.45mm; border:1px solid var(--line); vertical-align:top; overflow-wrap:anywhere; }
+tr:nth-child(even) td { background:#f5f8fa; }
+thead { display:table-header-group; }
+tr { page-break-inside:avoid; }
+pre { direction:ltr; text-align:left; background:#142534; color:#d9f1f0; padding:3mm; border-radius:2mm; font-size:7.5pt; white-space:pre-wrap; }
+code { font-family:"DejaVu Sans Mono",monospace; font-size:.88em; }
+del { color:#8c3b35; }
+.asset-page { page-break-before:always; padding-top:8mm; }
+.asset-page h2 { margin-top:0; }
+.asset-intro { color:var(--muted); }
+.character-card { display:grid; grid-template-columns:48mm 1fr; gap:7mm; align-items:center; margin:5mm 0 8mm; padding:5mm; background:var(--soft); border:1px solid var(--line); }
+.character-card img { width:48mm; height:45mm; object-fit:cover; border-radius:5mm; }
+.character-card strong { color:#08495d; font-size:12pt; }
+.app-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:5mm; margin-top:5mm; }
+.app-grid figure { margin:0; padding:2.5mm; background:#f7fafb; border:1px solid var(--line); border-radius:3mm; break-inside:avoid; }
+.app-grid img { display:block; width:100%; height:65mm; object-fit:cover; object-position:top; border-radius:2mm; }
+.app-grid figcaption { font-size:7.3pt; color:var(--muted); margin-top:1.5mm; text-align:center; }
+@media print { html,body { background:#fff; } .page { max-width:none; } a { color:inherit; } }
+</style>
+</head>
+<body>
+<div class="page">
+<section class="cover">
+  <div>
+    <div class="mark"><img src="file:///home/ubuntu/projects/saudi-mark/assets/brand/saudi-mark-character-reference.jpg" alt="Saudi Mark brand character"><span class="eyebrow">SAUDI MARK · GROWTH PLAYBOOK</span></div>
+    <h1>خطة AI-Only</h1>
+    <div class="subtitle">نسخة v4 لكل الفيديوهات والصور، بمحتوى AI موجه للسيدات على Instagram وTikTok.</div>
+    <div class="positioning">محتوى AI يشرح العناية بالسيارة للسيدات في جدة، بطريقة مفهومة وخفيفة.</div>
+    <div class="badge">نسخة v4 · AI Videos + AI Images · 2026</div>
+  </div>
+  <div class="meta">
+    <div><strong>الإيقاع</strong>3 فيديوهات + صورتان أسبوعيًا</div>
+    <div><strong>الإعلانات</strong>2,400 SAR خلال 8 أسابيع</div>
+    <div><strong>السوق الأساسي</strong>جدة أولًا</div>
+    <div><strong>نسخة الخطة</strong>v4 · 13 أغسطس 2026</div>
+  </div>
+</section>
+<section class="content">
+<h1 class="plan-title">Saudi Mark — خطة AI-Only للفيديوهات والصور</h1>
+<h2>Instagram وTikTok للسيدات في جدة — النسخة v4</h2>
+<p><strong>الفترة:</strong> 8 أسابيع بعد اعتماد التشغيل  </p>
+<p><strong>القنوات:</strong> Instagram وTikTok فقط  </p>
+<p><strong>نوع المحتوى:</strong> فيديوهات AI بالكامل + صور/Carousels AI بالكامل  </p>
+<p><strong>الإعلانات:</strong> 2,400 SAR فقط خلال 8 أسابيع  </p>
+<p><strong>الإيقاع:</strong> 3 فيديوهات + صورتان/Carousel أسبوعيًا</p>
+<blockquote>هذه الخطة لا تحتاج تصوير سيارات أو فنيين أو عميلات. كل المشاهد، السيارات، الشخصيات، الخلفيات، والرسوم يتم توليدها بالـAI. اللوجو والكارتكتر الرسميان يستخدمان كمرجع براند فقط، بينما النص العربي والـCTA يضافان بعد التوليد في CapCut أو أداة التصميم حتى يخرجا بشكل صحيح.</blockquote>
+<hr>
+<h1 class="plan-title">1. فكرة الحساب في نسخة AI-Only</h1>
+<p>الحساب لا يتصرف كأنه مغسلة تنشر نتائج حقيقية يوميًا. هو حساب بصري ذكي يشرح مواقف العناية بالسيارة بطريقة خفيفة ومفيدة.</p>
+<h2>الرسالة</h2>
+<blockquote><strong>Saudi Mark يجعل العناية بالسيارة أسهل في الفهم والترتيب، حتى في اليوم المزدحم.</strong></blockquote>
+<h2>الجمهور النسائي الذي نختبره</h2>
+<p>ليست كل السيدات جمهورًا واحدًا. نقسم الاختبار إلى مواقف:</p>
+<p class="numbered">1. <strong>موظفة جدة:</strong> تريد ترتيب العناية بدون إضافة مشوار جديد.</p>
+<p class="numbered">2. <strong>أم أو صاحبة مسؤوليات:</strong> تحتاج شرحًا سريعًا وخطوة واضحة.</p>
+<p class="numbered">3. <strong>مالكة سيارة جديدة أو Premium:</strong> تهتم بالداخلية والتعامل المحترم.</p>
+<p class="numbered">4. <strong>سيدة لا تريد مشاركة بياناتها:</strong> تفضل عدم إظهار الوجه أو اللوحة أو الموقع.</p>
+<p class="numbered">5. <strong>سيدة لا تحب مصطلحات السيارات:</strong> تريد أن تسأل بدون إحراج.</p>
+<p>هذه فرضيات إبداعية نختبرها، وليست تعميمات عن السيدات.</p>
+<hr>
+<h1 class="plan-title">2. ما معنى AI-Only هنا؟</h1>
+<h2>كل الفيديوهات AI</h2>
+<ul class="clean-list"><li>شخصيات نسائية غير واقعية أو من الخلف بدون هوية.</li><li>سيارات 2D أو 3D مولدة.</li><li>الكارتكتر الرسمي داخل مشاهد AI.</li><li>AI voice نسائي كسرد فقط.</li><li>Motion للوقت، المواقف، الغبار، التطبيق، والخصوصية.</li><li>انتقالات AI بين الهاتف والسيارة.</li></ul>
+<h2>كل الصور AI</h2>
+<ul class="clean-list"><li>صور Feed بنسبة 4:5.</li><li>صور Stories بنسبة 9:16.</li><li>Carousels برسوم AI ثابتة.</li><li>Illustrations للسيارة والداخلية والمواقف اليومية.</li><li>Infographics مرسومة بالـAI ثم يضاف النص العربي يدويًا.</li></ul>
+<h2>عناصر البراند</h2>
+<ul class="clean-list"><li>اللوجو والماسكوت الرسميان من ملفات Saudi Mark.</li><li>لا نولد لوجو جديدًا أو كتابة عربية داخل الصورة.</li><li>لا نستخدم صور عميلات حقيقيات أو Influencers مزيفات.</li><li>لا نولد تقييمات أو محادثات أو Before/After توحي بأنها نتيجة حقيقية.</li></ul>
+<h2>وسم المحتوى</h2>
+<p>عند احتمال التباس المشهد مع خدمة فعلية، نضيف في زاوية هادئة:</p>
+<pre><code>AI concept — تصور بصري</code></pre>
+<p>لا نضع الوسم على كل فيديو بطريقة تفسد التصميم، لكن يجب أن يكون واضحًا في Caption أو داخل المشهد عند الحاجة.</p>
+<hr>
+<h1 class="plan-title">3. سلاسل المحتوى الثابتة</h1>
+<h2>السلسلة A — “وقتكِ في يوم مزدحم”</h2>
+<p>AI stories عن اجتماعات، مدارس، مواعيد، مشاوير، وعودة من العمل.</p>
+<h2>السلسلة B — “سيارتكِ تتكلم”</h2>
+<p>سيارة AI لطيفة تشرح ما تحتاجه بدون مصطلحات فنية.</p>
+<h2>السلسلة C — “المساعدة الافتراضية”</h2>
+<p>شخصية صوتية نسائية، عبارة عن فقاعة زرقاء بجانب الكارتكتر، تسأل وتشرح.</p>
+<h2>السلسلة D — “صح أم غلط؟”</h2>
+<p>معلومات عناية عامة، بدون تشخيص أو وعود خدمة.</p>
+<h2>السلسلة E — “حجز بدون لخبطة”</h2>
+<p>واجهات تطبيق AI تخيلية أو UI مرجعي مكتوب عليه Concept، تشرح منطق الخطوة لا توفرها الفعلي.</p>
+<h2>السلسلة F — “مساحة خاصة لسيارتكِ”</h2>
+<p>الخصوصية، عدم ظهور الوجه، عدم إظهار اللوحة، وعدم مشاركة العنوان.</p>
+<h2>السلسلة G — “كارتكتر Saudi Mark”</h2>
+<p>مواقف قصيرة مضحكة، لكن الكارتكتر يعلق ولا يدعي تنفيذ خدمة.</p>
+<hr>
+<h1 class="plan-title">4. مواصفات الإنتاج</h1>
+<h2>فيديوهات</h2>
+<ul class="clean-list"><li>المقاس: 1080×1920.</li><li>النسبة: 9:16.</li><li>المدة: 10–18 ثانية.</li><li>30 fps.</li><li>Hook في أول ثانية.</li><li>النص العربي يضاف في CapCut.</li><li>لا Intro Logo أطول من 0.5 ثانية.</li><li>نهاية ثابتة 1.5 ثانية: الكارتكتر + Saudi Mark + CTA.</li></ul>
+<h2>صور Instagram</h2>
+<ul class="clean-list"><li>Feed: 1080×1350، بنسبة 4:5.</li><li>Carousel: 1080×1350 لكل شريحة.</li><li>Stories: 1080×1920.</li><li>العنوان العربي يضاف خارج مولد الصورة.</li><li>كل Carousel من 4 شرائح فقط حتى لا يطول.</li></ul>
+<h2>نسخة TikTok Photo Mode</h2>
+<p>من كل صورة Feed ننتج نسخة 9:16 بها العنصر الرئيسي في المنتصف، والنص في منطقة آمنة. لا نرفع صورة Instagram نفسها مع قص غير مدروس.</p>
+<hr>
+<h1 class="plan-title">5. التقويم الأسبوعي</h1>
+<p>كل أسبوع ينتج:</p>
+<ul class="clean-list"><li>فيديو AI رقم 1: موقف نسائي.</li><li>فيديو AI رقم 2: سيارة/كارتكتر/معلومة.</li><li>فيديو AI رقم 3: تطبيق/خصوصية/سؤال.</li><li>صورة AI رقم 1: صورة Feed.</li><li>صورة AI رقم 2: Carousel من 4 شرائح أو Photo Mode.</li></ul>
+<p>خلال 8 أسابيع:</p>
+<ul class="clean-list"><li><strong>24 فيديو AI.</strong></li><li><strong>16 أصلًا بصريًا AI للصور والـCarousels.</strong></li><li><strong>8 مجموعات Stories AI.</strong></li><li><strong>لا يوجد تصوير حقيقي مطلوب.</strong></li></ul>
+<hr>
+<h1 class="plan-title">6. أفكار الفيديوهات AI بالتفصيل</h1>
+<h2>الأسبوع 1 — “مشوار أقل”</h2>
+<h3>فيديو 01 — اجتماع بعد قليل</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> “عندك اجتماع؟ وسيارتك كمان مستنية.”</li><li><strong>المشهد:</strong> هاتف AI يظهر تنبيه اجتماع، انتقال إلى سيارة كرتونية في موقف، الكارتكتر يشير إلى Calendar.</li><li><strong>المدة:</strong> 15 ثانية.</li><li><strong>Voice-over:</strong> “العناية بالسيارة لا تحتاج أن تتحول لمشوار جديد. رتبي السؤال والوقت أولًا.”</li><li><strong>النص على الشاشة:</strong> “وقتكِ مشوار.”</li><li><strong>CTA:</strong> “اكتبي: وقتي.”</li><li><strong>نسخة Instagram:</strong> Cover “مشوار أقل”.</li><li><strong>نسخة TikTok:</strong> تبدأ بتنبيه الاجتماع بدون لوجو.</li><li><strong>Prompt ID:</strong> V01.</li></ul>
+<h3>فيديو 02 — السيارة تقول “أنا موجودة”</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> لقطة قريبة لسيارة AI تقول: “فاكراني؟”.</li><li><strong>المشهد:</strong> السيارة وسط موقف، طبقة غبار مرسومة كغيوم صغيرة، القط يرفع لافتة بدون نص.</li><li><strong>Voice-over:</strong> “حتى في الأسبوع المزدحم، خطوة صغيرة في التنظيم تفرق.”</li><li><strong>CTA:</strong> “احفظيه لنهاية الأسبوع.”</li><li><strong>Prompt ID:</strong> V02.</li></ul>
+<h3>فيديو 03 — حجز بدون لخبطة</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> “لا تفتحي خمس شاشات مرة واحدة.”</li><li><strong>المشهد:</strong> واجهة تطبيق AI مبسطة، كل مرة تظهر بطاقة واحدة: الوقت، الموقع، نوع السيارة.</li><li><strong>النص:</strong> “خطوة واحدة كل مرة.”</li><li><strong>ملاحظة:</strong> الشاشة Concept وليست إثباتًا أن التطبيق Live.</li><li><strong>CTA:</strong> “أي خطوة نوضحها؟”.</li><li><strong>Prompt ID:</strong> V03.</li></ul>
+<hr>
+<h2>الأسبوع 2 — “اسألي بدون إحراج”</h2>
+<h3>فيديو 04 — لا تحتاجين معرفة اسم الباقة</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> امرأة AI من الخلف أمام ثلاث بطاقات فنية غير مفهومة، ثم تتحول إلى سؤال بسيط.</li><li><strong>Voice-over:</strong> “ابدئي بالمشكلة، مش باسم الباقة.”</li><li><strong>النص:</strong> “قولي: داخلية / خارجية / وقتي ضيق.”</li><li><strong>CTA:</strong> “اكتبي المشكلة التي تريدين شرحها.”</li><li><strong>Prompt ID:</strong> V04.</li></ul>
+<h3>فيديو 05 — الخدش ليس دائمًا اتساخًا</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> “هذا غبار. وهذا شيء مختلف.”</li><li><strong>المشهد:</strong> سيارة AI، طبقة غبار تنزاح، خط خدش يبقى ظاهرًا، الكارتكتر يضع علامة سؤال.</li><li><strong>Voice-over:</strong> “المشهد توضيحي فقط. لا نعد بإزالة الخدوش.”</li><li><strong>CTA:</strong> “اكتبي: خدش.”</li><li><strong>Prompt ID:</strong> V05.</li></ul>
+<h3>فيديو 06 — سؤال السعر</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> آلة حاسبة AI تظهر أرقامًا فارغة، القط يغلقها.</li><li><strong>Voice-over:</strong> “السعر العادل يحتاج نوع السيارة والخدمة والتوفر. لا نخترع رقمًا لمجرد أن الفيديو أجمل.”</li><li><strong>النص:</strong> “السعر المعتمد أولًا.”</li><li><strong>CTA:</strong> “اكتبي: سعر.”</li><li><strong>Prompt ID:</strong> V06.</li></ul>
+<hr>
+<h2>الأسبوع 3 — “خصوصيتكِ أولًا”</h2>
+<h3>فيديو 07 — السيارة بدون كشف الهوية</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> “نقدر نعرض السيارة بدون ما نعرضكِ.”</li><li><strong>المشهد:</strong> وجه ولوحة AI يتحولان إلى أشكال ضبابية، السيارة تبقى واضحة.</li><li><strong>Voice-over:</strong> “الخصوصية ليست تفصيلة في المحتوى. هي جزء من طريقة العرض.”</li><li><strong>CTA:</strong> “اكتبي: خصوصية.”</li><li><strong>تنبيه:</strong> لا نعرض ذلك كسياسة تشغيل نهائية قبل اعتمادها.</li><li><strong>Prompt ID:</strong> V07.</li></ul>
+<h3>فيديو 08 — منزل أم مكتب؟</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> Split screen: “في البيت” / “في المكتب”.</li><li><strong>المشهد:</strong> الكارتكتر يقارن المساحة والوقت فقط، بدون إظهار أحياء أو مواقع حقيقية.</li><li><strong>Voice-over:</strong> “المكان المناسب يعتمد على التوفر والمساحة، وليس على لقطة جميلة فقط.”</li><li><strong>CTA:</strong> “منزل أم مكتب؟”.</li><li><strong>Prompt ID:</strong> V08.</li></ul>
+<h3>فيديو 09 — لا ترسلي عنوانك في التعليق</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> تعليق AI يحاول كتابة عنوان كامل، القط يمسحه.</li><li><strong>Voice-over:</strong> “اكتبي الحي بشكل عام فقط. لا تضعي عنوانك هنا.”</li><li><strong>النص:</strong> “احمي بياناتك.”</li><li><strong>CTA:</strong> “اكتبي: جدة فقط.”</li><li><strong>Prompt ID:</strong> V09.</li></ul>
+<hr>
+<h2>الأسبوع 4 — “داخلية السيارة”</h2>
+<h3>فيديو 10 — حقيبة العمل في المقعد الخلفي</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> “سيارتك شايلة يومك كله.”</li><li><strong>المشهد:</strong> حقيبة، كوب، نظارة، وملفات تظهر بأسلوب AI، ثم تتحول إلى أيقونات ترتيب.</li><li><strong>Voice-over:</strong> “العناية بالداخلية تبدأ من فهم ما يحدث فيها، وليس من رش أي مادة.”</li><li><strong>CTA:</strong> “داخلية أم خارجية؟”.</li><li><strong>Prompt ID:</strong> V10.</li></ul>
+<h3>فيديو 11 — ثلاثة أخطاء في التنظيف المنزلي</h3>
+<ul class="clean-list"><li><strong>المحتوى:</strong> مادة مجهولة، فرك قوي، خلط منتجات.</li><li><strong>المشهد:</strong> الكارتكتر يوقف كل حركة بعلامة بسيطة.</li><li><strong>Voice-over:</strong> “لو المادة غير معروفة، لا تجربيها على سطح ظاهر.”</li><li><strong>CTA:</strong> “احفظي الفيديو.”</li><li><strong>Prompt ID:</strong> V11.</li></ul>
+<h3>فيديو 12 — الكونسول يتكلم</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> “أنا مش ترابيزة.”</li><li><strong>المشهد:</strong> كونسول AI يتكلم، تظهر أيقونات هاتف ومفتاح وكوب، ثم المساعدة ترتب الأولويات.</li><li><strong>Voice-over:</strong> “كل سطح في السيارة له طريقة تعامل مختلفة. هذا تصور تعليمي، وليس نتيجة خدمة فعلية.”</li><li><strong>CTA:</strong> “أي جزء نشرحه بعد ذلك؟”.</li><li><strong>Prompt ID:</strong> V12.</li></ul>
+<hr>
+<h2>الأسبوع 5 — “وقت العائلة”</h2>
+<h3>فيديو 13 — مشوار المدرسة</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> “بين مشوار المدرسة والدوام، نسيتِ السيارة.”</li><li><strong>المشهد:</strong> Calendar AI، شنطة، مفتاح، سيارة، ثم خانة وقت فارغة بدون رقم.</li><li><strong>Voice-over:</strong> “خلي العناية جزءًا من ترتيب الأسبوع، لا مهمة تظهر فجأة.”</li><li><strong>CTA:</strong> “صباح أم مساء؟”.</li><li><strong>Prompt ID:</strong> V13.</li></ul>
+<h3>فيديو 14 — نهاية الأسبوع والغبار</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> “المشوار كان حلو. الغبار لا.”</li><li><strong>المشهد:</strong> طريق AI رمزي، نقاط غبار تتحول إلى أيقونات على السيارة، القط يشير إلى الداخل والخارج.</li><li><strong>Voice-over:</strong> “ابدئي بوصف المشكلة بدل التخمين.”</li><li><strong>CTA:</strong> “اكتبي: نهاية أسبوع.”</li><li><strong>Prompt ID:</strong> V14.</li></ul>
+<h3>فيديو 15 — السيارة كمساحتكِ الخاصة</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> “بعض الأيام، السيارة هي المساحة الهادئة الوحيدة.”</li><li><strong>المشهد:</strong> امرأة AI من الخلف داخل سيارة مضاءة، بدون ملامح أو موقع، السيارة تتحول إلى مساحة مرتبة وهادئة.</li><li><strong>Voice-over:</strong> “لذلك نحب أن تكون العناية واضحة ومحترمة.”</li><li><strong>CTA:</strong> “داخلية.”</li><li><strong>Prompt ID:</strong> V15.</li></ul>
+<hr>
+<h2>الأسبوع 6 — “التطبيق المفهوم”</h2>
+<h3>فيديو 16 — شاشة واحدة فقط</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> “لا نحتاج نعرض التطبيق كله.”</li><li><strong>المشهد:</strong> شاشة AI Concept واحدة لتحديد الوقت، تكبير على عنصر واحد، انتقال إلى Calendar.</li><li><strong>Voice-over:</strong> “كل فيديو يشرح خطوة واحدة.”</li><li><strong>CTA:</strong> “وقت أم موقع؟”.</li><li><strong>Prompt ID:</strong> V16.</li></ul>
+<h3>فيديو 17 — زر الموقع</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> “الموقع ليس مجرد Pin.”</li><li><strong>المشهد:</strong> Pin AI يتحول إلى منزل ومكتب بشكل رمزي، بدون أسماء مناطق.</li><li><strong>Voice-over:</strong> “الموقع جزء من التوفر والتنفيذ، لذلك لا نعرضه كأنه متاح في كل مكان.”</li><li><strong>CTA:</strong> “اكتبي الحي بشكل عام.”</li><li><strong>Prompt ID:</strong> V17.</li></ul>
+<h3>فيديو 18 — لا تخلطي بين Concept وLive</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> شاشة AI مكتوب عليها بصريًا Concept، ثم تظهر بطاقة “Live / Pending” يضاف نصها لاحقًا.</li><li><strong>Voice-over:</strong> “الصورة التوضيحية لا تعني أن الخاصية جاهزة. نوضح الحالة قبل الإعلان.”</li><li><strong>CTA:</strong> “ما الشاشة التي تحتاجين شرحها؟”.</li><li><strong>Prompt ID:</strong> V18.</li></ul>
+<hr>
+<h2>الأسبوع 7 — “الكارتكتر يتكلم”</h2>
+<h3>فيديو 19 — القط ضد اللمعان الزائد</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> القط يسحب انعكاسًا كبيرًا ويكشف نقطة صغيرة.</li><li><strong>Voice-over:</strong> “اللمعان جميل، لكن التفاصيل أهم.”</li><li><strong>CTA:</strong> “تفاصيل أم لمعان؟”.</li><li><strong>Prompt ID:</strong> V19.</li></ul>
+<h3>فيديو 20 — القط لا يصدق كل وعد</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> ثلاث بطاقات AI: “يزيل كل شيء”، “يناسب كل سيارة”، “متاح في كل جدة”. القط يمزقها.</li><li><strong>Voice-over:</strong> “لا نستخدم وعدًا لا نقدر نشرحه أو نثبته.”</li><li><strong>CTA:</strong> “اكتبي أكثر وعد لا تثقين به.”</li><li><strong>Prompt ID:</strong> V20.</li></ul>
+<h3>فيديو 21 — المساعدة الافتراضية تجيب</h3>
+<ul class="clean-list"><li><strong>Hook:</strong> فقاعة زرقاء تقول: “سؤال صغير قبل أن نجاوب.”</li><li><strong>المشهد:</strong> السيارة، الجزء، الموقع العام، الوقت.</li><li><strong>Voice-over:</strong> “كلما كان السؤال أوضح، كان الرد أفضل.”</li><li><strong>CTA:</strong> “اكتبي نوع السيارة والجزء فقط.”</li><li><strong>Prompt ID:</strong> V21.</li></ul>
+<hr>
+<h2>الأسبوع 8 — “اختاري شكل الحساب”</h2>
+<h3>فيديو 22 — أي شخصية تفضلين؟</h3>
+<ul class="clean-list"><li><strong>المشهد:</strong> 3 نسخ AI: السيارة، القط، فقاعة المساعدة.</li><li><strong>Hook:</strong> “مين يشرح لكِ أفضل؟”.</li><li><strong>CTA:</strong> “1 السيارة / 2 القط / 3 المساعدة.”</li><li><strong>Prompt ID:</strong> V22.</li></ul>
+<h3>فيديو 23 — يومكِ في 15 ثانية</h3>
+<ul class="clean-list"><li><strong>المشهد:</strong> Calendar، مفاتيح، سيارة، غبار، فقاعة سؤال، نهاية Brand Card.</li><li><strong>Voice-over:</strong> “وقت مزدحم، سؤال واضح، عناية أسهل.”</li><li><strong>CTA:</strong> “احفظيه لبداية الأسبوع.”</li><li><strong>Prompt ID:</strong> V23.</li></ul>
+<h3>فيديو 24 — ما الذي نكمله؟</h3>
+<ul class="clean-list"><li><strong>المشهد:</strong> لوحة AI فيها السلاسل السبعة، وكل سلسلة تتحرك لحظة.</li><li><strong>Voice-over:</strong> “اختاري السلسلة التي تريدينها في الشهر القادم.”</li><li><strong>CTA:</strong> “وقت / داخلية / خصوصية / تطبيق.”</li><li><strong>Prompt ID:</strong> V24.</li></ul>
+<hr>
+<h1 class="plan-title">7. أفكار الصور والـCarousels AI</h1>
+<p>كل صورة لها نسخة 4:5 لإنستجرام ونسخة 9:16 لـTikTok Photo Mode وStories.</p>
+<h2>الصورة 01 — “مشوار أقل”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> امرأة AI من الخلف تحمل مفاتيح، سيارة زرقاء في موقف هادئ، كارتكتر صغير على طرف الصورة.</li><li><strong>Headline المضاف يدويًا:</strong> “وقتكِ مشوار.”</li><li><strong>Caption:</strong> “العناية بالسيارة تبدأ من ترتيب الوقت، لا من إضافة مهمة عشوائية.”</li><li><strong>CTA:</strong> “اكتبي: وقتي.”</li></ul>
+<h2>الصورة 02 — “اسألي بدون إحراج”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> فقاعة سؤال كبيرة بجانب سيارة، بدون وجه أو بيانات.</li><li><strong>Headline:</strong> “ابدئي بالمشكلة.”</li><li><strong>CTA:</strong> “اكتبي الجزء الذي تريدين شرحه.”</li></ul>
+<h2>الصورة 03 — “خصوصيتكِ”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> سيارة واضحة، الوجه واللوحة على شكل رموز مطموسة.</li><li><strong>Headline:</strong> “سيارتكِ تظهر. بياناتكِ لا.”</li><li><strong>ملاحظة:</strong> يظل هذا تصورًا إبداعيًا حتى اعتماد سياسة الخصوصية.</li></ul>
+<h2>الصورة 04 — “داخلية السيارة”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> مقعد خلفي مرتب، حقيبة عمل، كوب، شال، وألوان Saudi Mark.</li><li><strong>Headline:</strong> “العناية تبدأ من الداخل.”</li><li><strong>CTA:</strong> “داخلية أم خارجية؟”.</li></ul>
+<h2>الصورة 05 — “السعر العادل”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> آلة حاسبة AI بدون أرقام، حولها ثلاثة Icons: سيارة، خدمة، موقع.</li><li><strong>Headline:</strong> “لا رقم قبل التفاصيل.”</li><li><strong>CTA:</strong> “اكتبي: سعر.”</li></ul>
+<h2>الصورة 06 — “منزل أم مكتب؟”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> Split frame AI، نصفه Home parking ونصفه Office parking بدون علامات حقيقية.</li><li><strong>Headline:</strong> “أين يناسب يومكِ؟”.</li><li><strong>CTA:</strong> “منزل / مكتب.”</li></ul>
+<h2>الصورة 07 — “الغبار بعد المشوار”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> سيارة AI بعد طريق رمزي، غبار كرسوم بسيطة لا كصورة نتيجة حقيقية.</li><li><strong>Headline:</strong> “المشوار كان حلو. الغبار لا.”</li><li><strong>CTA:</strong> “نهاية أسبوع.”</li></ul>
+<h2>الصورة 08 — “اللمعان ليس كل شيء”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> انعكاس لامع، وتحت الانعكاس دائرة تكشف تفصيلة صغيرة.</li><li><strong>Headline:</strong> “شوفي التفاصيل.”</li></ul>
+<h2>الصورة 09 — “حجز بدون لخبطة”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> شاشة تطبيق AI Concept فيها خطوة واحدة فقط، مع Label يضاف يدويًا: “Concept”.</li><li><strong>Headline:</strong> “خطوة واحدة كل مرة.”</li></ul>
+<h2>الصورة 10 — “لا عنوان في التعليق”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> إصبع AI يمسح سطر عنوان طويل ويترك كلمة “جدة”.</li><li><strong>Headline:</strong> “احمي بياناتكِ.”</li></ul>
+<h2>الصورة 11 — “سيارتك تتكلم”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> سيارة 3D لطيفة بعيون بسيطة بدون طابع طفولي زائد، القط بجانبها.</li><li><strong>Headline:</strong> “أنا محتاجة ترتيب.”</li></ul>
+<h2>الصورة 12 — “صح أم غلط؟”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> لوحة AI مقسومة إلى صح/غلط، بلا نص داخل التوليد.</li><li><strong>Headline:</strong> “اللمعان = نظافة؟”.</li><li><strong>CTA:</strong> “جاوبي في التعليقات.”</li></ul>
+<h2>الصورة 13 — “موعدك”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> Calendar AI بلون أزرق، خانة فارغة للعناية، سيارة صغيرة في أسفل التصميم.</li><li><strong>Headline:</strong> “خليها في جدولك.”</li></ul>
+<h2>الصورة 14 — “لا تحتاجين مصطلحات”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> كلمات فنية مجردة تتحول إلى Icons بسيطة: داخلي، خارجي، وقت، مكان.</li><li><strong>Headline:</strong> “قولي المشكلة فقط.”</li></ul>
+<h2>الصورة 15 — “AI يقول، والكارتكتر يوضح”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> فقاعة AI على اليسار، القط يشير إلى سيارة Concept على اليمين.</li><li><strong>Headline:</strong> “شرح أسهل.”</li></ul>
+<h2>الصورة 16 — “اختاري السلسلة”</h2>
+<ul class="clean-list"><li><strong>Visual:</strong> أربع بطاقات AI صغيرة: وقت، داخلية، خصوصية، تطبيق.</li><li><strong>Headline:</strong> “نبدأ من أي موضوع؟”.</li><li><strong>CTA:</strong> “اكتبي اختيارك.”</li></ul>
+<hr>
+<h1 class="plan-title">8. Prompts الأساسية للفيديو AI</h1>
+<h2>Master Video Prompt</h2>
+<pre><code>Generate a complete video clip, not a still image. Vertical 9:16, 1080x1920, 30 fps, exact duration: [DURATION]. Create a polished Saudi Mark AI motion-graphics scene for women in Jeddah. Use the official Saudi Mark white cat mascot as a visual reference only, preserving its blue cap, goggles, scarf, and blue/yellow hose. Use navy, blue, white, and yellow palette. Use a stylized 2D or soft 3D world, not a photorealistic customer or service scene. Leave the upper and lower safe areas empty for Arabic text added later in CapCut. Use one clear visual action, smooth camera movement, clean easing, consistent mascot proportions, and a 0–3 second hook. Do not generate Arabic text, logos, prices, ratings, phone numbers, addresses, real customer faces, license plates, fake testimonials, fake before/after results, fake booking confirmations, or claims that a service was completed. No watermark, no random letters, no distorted hands, no flicker, no extra limbs, no brand imitation.</code></pre>
+<h2>Prompt V01 — وقت الموظفة</h2>
+<pre><code>Use the Master Video Prompt. Duration 15 seconds. Timeline: 0–3 seconds, an abstract phone shows a calendar notification with no readable text; 3–7 seconds, a stylized woman represented only by hands, tote bag, and car keys moves toward a blue car; 7–12 seconds, the Saudi Mark mascot points to a blank calendar slot; 12–15 seconds, the car and mascot settle into a clean end frame. Add no text inside generation. Make the mood calm, practical, and premium. The scene is an AI concept, not a real booking or service result.</code></pre>
+<h2>Prompt V02 — سيارة تتكلم</h2>
+<pre><code>Use the Master Video Prompt. Duration 12 seconds. Start with a close-up of a stylized blue car in a generic parking space. A subtle illustrated dust layer appears on the door edge. The car reacts with friendly expressive headlights but no mouth text. The mascot notices the detail and points toward it. End with the car cleanly framed, without showing a cleaning result. Use soft motion, no photorealistic people, no real location signs.</code></pre>
+<h2>Prompt V03 — حجز Concept</h2>
+<pre><code>Use the Master Video Prompt. Duration 15 seconds. Create a fictional clean mobile booking interface made of blank cards and icons only, no readable text and no numbers. Animate one card at a time: generic calendar icon, generic location pin, generic car icon. The mascot guides the sequence. Clearly leave space for the editor to add the label “Concept”. Do not imply a live feature or confirmed appointment.</code></pre>
+<h2>Prompt V04 — الخصوصية</h2>
+<pre><code>Use the Master Video Prompt. Duration 15 seconds. Show a stylized car with abstract face and plate icons floating above it. The icons transform into soft blue neutral shapes and fade away while the car remains visible. The mascot gives a respectful nod. Do not show real identity, location, plate, or customer. The concept is about privacy-safe content, not a final operating policy.</code></pre>
+<h2>Prompt V05 — داخلية السيارة</h2>
+<pre><code>Use the Master Video Prompt. Duration 15 seconds. Show a stylized rear car seat with a work tote, cup, scarf, and sunglasses. Each object turns into a simple icon and moves into an organized layout. The mascot points to the interior. Do not show cleaning, disinfecting, bacteria, or a service result. Keep the scene warm and useful for a busy woman.</code></pre>
+<h2>Prompt V06 — سعر بدون رقم</h2>
+<pre><code>Use the Master Video Prompt. Duration 12 seconds. Show a blank calculator with no numbers. The mascot closes it gently. Three neutral icons appear: car type, service scope, and general location. Keep the calculator blank and leave a large safe area for Arabic text added in CapCut. Do not generate currency, prices, discounts, or booking confirmations.</code></pre>
+<hr>
+<h1 class="plan-title">9. Prompts الأساسية للصور AI</h1>
+<h2>Master Image Prompt</h2>
+<pre><code>Create a premium Saudi Mark AI illustration for Instagram. Vertical 4:5, 1080x1350. Use the official white cat mascot as a reference only, preserving its blue cap, goggles, scarf, and blue/yellow hose. Use navy, Saudi Mark blue, white, and yellow accent. Show one clear idea for women in Jeddah through a stylized car, phone, calendar, privacy icon, or interior detail. Use clean 2D editorial illustration or soft 3D render, not a real customer photo. Leave 35% empty clean space for Arabic headline added later. Do not generate Arabic text, logo, price, rating, phone number, address, license plate, fake testimonial, or service result. No watermark, no random letters, no clutter, no photorealistic influencer.</code></pre>
+<h2>Image Prompt 01 — وقتكِ مشوار</h2>
+<pre><code>Use the Master Image Prompt. Show a stylized woman only through hands holding car keys and a phone, a blue car in a calm generic parking area, calendar shapes floating softly, and the mascot in the lower corner. The mood is organized and reassuring. Keep the top third empty for the headline.</code></pre>
+<h2>Image Prompt 02 — خصوصيتكِ</h2>
+<pre><code>Use the Master Image Prompt. Show a car clearly while abstract face, plate, and map icons dissolve into blue soft shapes. No human face, no readable location, no real plate. Keep the left side empty for Arabic copy.</code></pre>
+<h2>Image Prompt 03 — داخلية السيارة</h2>
+<pre><code>Use the Master Image Prompt. Show a premium but realistic stylized car interior with a tote, cup, scarf, and sunglasses organized neatly. No person, no documents, no personal data. Warm navy and cream light, clean right-side space for text.</code></pre>
+<h2>Image Prompt 04 — حجز Concept</h2>
+<pre><code>Use the Master Image Prompt. Show a fictional mobile interface made of blank cards, calendar icon, location icon, and car icon, with the mascot pointing to one card. No readable text, no price, no confirmation, no real app claim. Leave top space for the editor label “Concept”.</code></pre>
+<hr>
+<h1 class="plan-title">10. تنفيذ CapCut</h1>
+<h2>ترتيب كل فيديو</h2>
+<ul class="clean-list"><li>0.0–0.5: أقوى حركة.</li><li>0.5–3.0: Hook مكتوب بالعربي.</li><li>3.0–8.0: الموقف أو المشكلة.</li><li>8.0–13.0: شرح المساعدة أو السيارة.</li><li>13.0–16.0: CTA.</li><li>آخر 1.5 ثانية: الكارتكتر والبراند.</li></ul>
+<h2>الخطوط والألوان</h2>
+<ul class="clean-list"><li>نص رئيسي: أبيض أو كحلي.</li><li>Highlight: أصفر Saudi Mark.</li><li>خلفية النص: Blue/navy بنسبة شفافية بسيطة.</li><li>لا نضع نصًا فوق تفاصيل AI المهمة.</li><li>نراجع اتصال الحروف العربية على الهاتف قبل التصدير.</li></ul>
+<h2>الصوت</h2>
+<ul class="clean-list"><li>AI voice نسائي هادئ.</li><li>لا نقدمه كصوت عميلة.</li><li>موسيقى خفيفة أو SFX فقط.</li><li>صوت السيارة والكارتكتر يمكن أن يكونا اصطناعيين وواضحين.</li></ul>
+<hr>
+<h1 class="plan-title">11. الصور والـCarousels على Instagram وTikTok</h1>
+<h2>Carousel أسبوعي من 4 شرائح</h2>
+<p class="numbered">1. سؤال بصري.</p>
+<p class="numbered">2. شرح AI مبسط.</p>
+<p class="numbered">3. مثال كرتوني.</p>
+<p class="numbered">4. CTA واحد.</p>
+<h2>أمثلة</h2>
+<h3>Carousel “السعر”</h3>
+<ul class="clean-list"><li>شريحة 1: “ليه ما فيش رقم واحد؟”.</li><li>شريحة 2: نوع السيارة.</li><li>شريحة 3: نوع العناية.</li><li>شريحة 4: “اكتبي: سعر”.</li></ul>
+<h3>Carousel “الخصوصية”</h3>
+<ul class="clean-list"><li>شريحة 1: “هل لازم تظهرين في المحتوى؟”.</li><li>شريحة 2: السيارة فقط.</li><li>شريحة 3: طمس الهوية والموقع.</li><li>شريحة 4: “اكتبي: خصوصية”.</li></ul>
+<h3>Carousel “داخلية السيارة”</h3>
+<ul class="clean-list"><li>شريحة 1: “سيارتك تشيل يومك”.</li><li>شريحة 2: مقعد العمل.</li><li>شريحة 3: الكونسول.</li><li>شريحة 4: “داخلية أم خارجية؟”.</li></ul>
+<hr>
+<h1 class="plan-title">12. ميزانية الإعلانات</h1>
+<h2>الإجمالي: 2,400 SAR</h2>
+<p>لا نعلن على كل المحتوى، ولا نبدأ من أول يوم.</p>
+<div class="table-wrap"><table><thead><tr><th>الفترة</th><th>الإجمالي</th><th>Instagram</th><th>TikTok</th><th>القرار</th></tr></thead><tbody><tr><td>الأسبوع 1–2</td><td>0</td><td>0</td><td>0</td><td>نشر عضوي واختبار الشخصيات</td></tr><tr><td>الأسبوع 3–4</td><td>480</td><td>288</td><td>192</td><td>أفضل فيديو AI</td></tr><tr><td>الأسبوع 5–6</td><td>720</td><td>432</td><td>288</td><td>أفضل فيديو + صورة AI</td></tr><tr><td>الأسبوع 7–8</td><td>1,200</td><td>720</td><td>480</td><td>أفضل سلسلتين فقط</td></tr><tr><td><strong>الإجمالي</strong></td><td><strong>2,400</strong></td><td><strong>1,440</strong></td><td><strong>960</strong></td><td>اختبار محدود</td></tr></tbody></table></div>
+<h2>جمهور الإعلان</h2>
+<ul class="clean-list"><li>سيدات في جدة.</li><li>تقسيم اختبار 23–34 و30–45.</li><li>لا نستخدم ادعاءات عن الحالة الاجتماعية أو الدخل.</li><li>نختبر الاهتمامات المتاحة على المنصة فقط.</li><li>نوقف الإعلان على أي فيديو يولد أسئلة عن سعر أو خدمة غير جاهزة.</li></ul>
+<hr>
+<h1 class="plan-title">13. مؤشرات القياس</h1>
+<ul class="clean-list"><li>إكمال أول 3 ثوانٍ.</li><li>متوسط مشاهدة الفيديو.</li><li>Saves للصور والـCarousels.</li><li>Shares للفيديوهات التي تمثل يومًا مزدحمًا.</li><li>تعليقات “وقت / داخلية / خصوصية / سعر”.</li><li>زيارات الحساب.</li><li>أداء السيارة المتكلمة مقابل الكارتكتر.</li><li>أداء الصوت النسائي مقابل النص فقط.</li><li>أداء 4:5 Feed مقابل 9:16 Photo Mode.</li></ul>
+<p>نغير عنصرًا واحدًا في كل اختبار: Hook أو الشخصية أو الصوت أو CTA، وليس الكل مرة واحدة.</p>
+<hr>
+<h1 class="plan-title">14. قواعد منع الـAI Slop</h1>
+<p>نرفض أي أصل إذا:</p>
+<ul class="clean-list"><li>ظهر نص عربي مشوه داخل الصورة أو الفيديو.</li><li>تغير شكل الكارتكتر بين اللقطات.</li><li>ظهرت يدان أو عجلات أو لوحات غير منطقية.</li><li>المشهد يبدو كإعلان لخدمة تمت فعلًا.</li><li>ظهر سعر أو Rating أو Review بلا اعتماد.</li><li>استخدم AI وجه امرأة حقيقية أو شهادة مزيفة.</li><li>كان المشهد جميلًا لكن لا يشرح فكرة واحدة.</li><li>احتوى CTA على أكثر من طلب.</li></ul>
+<h2>الاختبار النهائي</h2>
+<p>اسأل قبل النشر:</p>
+<blockquote>هل ستفهم السيدة خلال أول ثانيتين أن هذا تصور AI مفيد، وليس وعدًا بخدمة حدثت فعلًا؟</blockquote>
+<p>إذا كانت الإجابة لا، نعدل المشهد أو نضيف Label “AI concept”.</p>
+<hr>
+<h1 class="plan-title">15. الناتج بعد 8 أسابيع</h1>
+<ul class="clean-list"><li>24 فيديو AI كامل، لكل واحد Prompt ID مبني على Master Video Prompt.</li><li>16 صورة/Carousel AI، لكل واحد Prompt ID مبني على Master Image Prompt.</li><li>8 مجموعات Stories AI.</li><li>6 أمثلة Prompt فيديو مكتوبة بالكامل + Master Video Prompt قابل لإعادة الاستخدام.</li><li>4 أمثلة Prompt صورة مكتوبة بالكامل + Master Image Prompt قابل لإعادة الاستخدام.</li><li>7 سلاسل واضحة للحساب.</li><li>جمهور نسائي مختبر حسب الموقف، وليس حسب تعميم.</li><li>2,400 SAR فقط للإعلانات.</li><li>مكتبة محتوى يمكن إعادة تركيبها بموسيقى وHooks جديدة.</li></ul>
+<hr>
+<h2>مراجع الأصول</h2>
+<ul class="clean-list"><li><a href="../assets/brand/README.md">الكارتكتر الرسمي</a></li><li><a href="../assets/app-ui/README.md">مرجع واجهات التطبيق</a></li><li><a href="saudi-mark-ai-women-instagram-tiktok-plan-v3-ar.md">خطة AI للسيدات v3 للمقارنة</a></li><li><a href="saudi-mark-instagram-tiktok-plan-v2-ar.md">خطة v2 للمقارنة</a></li></ul>
+</section>
+<section class="asset-page content">
+  <h2>مرجع الهوية والتطبيق المستخدم في الخطة</h2>
+  <p class="asset-intro">الأصول التالية مملوكة/مقدمة من صاحب البراند، وتُستخدم كمرجع بصري للمحتوى، الإعلانات، العروض، وتجربة الحجز. الأسعار والأرقام الظاهرة في واجهات التطبيق ليست اعتمادًا إنتاجيًا.</p>
+  <div class="character-card"><img src="file:///home/ubuntu/projects/saudi-mark/assets/brand/saudi-mark-character-reference.jpg" alt="Saudi Mark character"><div><strong>كارتكتر Saudi Mark الرسمي</strong><p>قط أبيض ودود بكاب أزرق ونظارة حماية وشال أزرق وخرطوم أزرق/أصفر. يظهر في الـmotion والـStories والتغليف دون استبدال لقطات الخدمة الحقيقية.</p></div></div>
+  <h3>Application UI references</h3>
+  <div class="app-grid"><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/01-splash-screen.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>01 splash screen</figcaption></figure><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/02-booking-date-slot-vehicle.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>02 booking date slot vehicle</figcaption></figure><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/03-home-dashboard.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>03 home dashboard</figcaption></figure><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/04-booking-location-gifts.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>04 booking location gifts</figcaption></figure><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/05-booking-vehicle-location.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>05 booking vehicle location</figcaption></figure><figure><img src="file:///home/ubuntu/projects/saudi-mark/assets/app-ui/06-booking-mode-service-zone.jpg" alt="مرجع واجهة تطبيق Saudi Mark"><figcaption>06 booking mode service zone</figcaption></figure></div>
+</section>
+</div>
+</body>
+</html>

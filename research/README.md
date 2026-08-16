@@ -16,6 +16,10 @@
 - `../exports/saudi-mark-ai-women-instagram-tiktok-plan-v3-ar.pdf`: PDF مستقل لخطة AI للسيدات.
 - `../exports/saudi-mark-ai-women-instagram-tiktok-plan-v3-ar.html`: نسخة HTML القابلة للطباعة لخطة v3.
 - `../marketing/render_saudi_mark_v3.py`: سكربت توليد HTML/PDF لخطة v3.
+- `../marketing/saudi-mark-ai-only-videos-images-plan-v4-ar.md`: خطة AI-Only تشمل 24 فيديو AI و16 صورة/Carousel AI مع Prompt IDs وأفكار أسبوعية.
+- `../exports/saudi-mark-ai-only-videos-images-plan-v4-ar.pdf`: PDF مستقل لخطة الفيديوهات والصور AI-only.
+- `../exports/saudi-mark-ai-only-videos-images-plan-v4-ar.html`: نسخة HTML القابلة للطباعة لخطة v4.
+- `../marketing/render_saudi_mark_v4.py`: سكربت توليد HTML/PDF لخطة v4.
 - `../prompts/omni/ready-video-prompts.md`: 10 Prompts جاهزة لتوليد فيديو clips عبر Flow/Gemini Omni.
 - `../prompts/capcut/ready-copy-and-sound.md`: نصوص عربية وتوقيتات ومؤثرات صوتية لـCapCut.
 
